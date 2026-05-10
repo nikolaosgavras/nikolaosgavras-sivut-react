@@ -1,21 +1,29 @@
 import './App.css'
-import { SiteHeader } from './components/SiteHeader'
+import { Routes, Route } from 'react-router';
+import { AppLayout } from './components/AppLayout';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+import { HomePage } from './pages/HomePage'
+
+const About = () => <h1>About</h1>
+const Services = () => <h1>Services</h1>
+const Portfolio = () => <h1>Portfolio</h1>
+const Contact = () => <h1>Contact</h1>
 
 function App() {
   
   return (
     <>
-      <head>
-        <title>Nikolaos Gavras - Kotisivu</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-      </head>
-
-      <body className='bg-slate-950'>
-        <SiteHeader />
-
-        
-      </body>
+      <Routes>
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
     </>
   )
 }
