@@ -13,11 +13,11 @@ export const SiteHeader = () => {
           </div>
 
           <div className="hidden md:flex space-x-3">
-            <NavLink to="/" className="hover:bg-gray-800 py-2 px-4 rounded-xl">Koti</NavLink>
-            <NavLink to="/about" className="hover:bg-gray-800 py-2 px-4 rounded-xl">Tietoa minusta</NavLink>
-            <NavLink to="/services" className="hover:bg-gray-800 py-2 px-4 rounded-xl">Palvelut</NavLink>
-            <NavLink to="/portfolio" className="hover:bg-gray-800 py-2 px-4 rounded-xl">Portfolio</NavLink>
-            <NavLink to="/contact" className="hover:bg-gray-800 py-2 px-4 rounded-xl">Ota yhteyttä</NavLink>
+            <NavLink to="/" className="button hover:bg-gray-800 py-2 px-4 rounded-xl">Koti</NavLink>
+            <NavLink to="/about" className="button hover:bg-gray-800 py-2 px-4 rounded-xl">Tietoa minusta</NavLink>
+{/*             <NavLink to="/services" className="button hover:bg-gray-800 py-2 px-4 rounded-xl">Palvelut</NavLink> */}
+            <NavLink to="/portfolio" className="button hover:bg-gray-800 py-2 px-4 rounded-xl">Portfolio</NavLink>
+            <NavLink to="/contact" className="button hover:bg-gray-800 py-2 px-4 rounded-xl">Ota yhteyttä</NavLink>
           </div>
 
           <div className="hidden md:flex space-x-3">

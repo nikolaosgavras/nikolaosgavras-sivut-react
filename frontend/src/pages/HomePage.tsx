@@ -12,7 +12,8 @@ export const HomePage = () => {
             <h2 className="text-gray-300 text-2xl">Ohjelmistokehittäjä, viimeisen vuoden opiskelija Savon ammattiopistossa</h2>
           </div>
           <div data-aos="fade-up" data-aos-delay="250" className="grid text-white max-w-fit text-center">
-            <Link to="/portfolio" className="button px-4 py-2 rounded-full border border-white text-black font-bold text-xl bg-sky-300">Portfolio</Link>
+            <Link to="/portfolio" className="button mb-3 px-4 py-2 rounded-full border border-white text-black font-bold text-xl bg-sky-300">Portfolio</Link>
+            <Link to="/contact" className="button px-4 py-2 rounded-full border border-white text-black font-bold text-xl bg-sky-300">Ota yhteyttä</Link>
 
             <div className="flex mt-5 gap-5">
               <a href="https://www.linkedin.com/in/nikolaosgavras/" aria-label="My LinkedIn page" target="_blank" className="inline-flex items-center gap-2 hover:text-gray-300">LinkedIn
