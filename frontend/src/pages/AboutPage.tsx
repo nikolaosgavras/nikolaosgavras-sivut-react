@@ -89,7 +89,7 @@ export const AboutPage = () => {
         </div>
       </section>
 
-      <section data-aos="fade-up" id="languages" className="max-w-11/12 xl:max-w-7xl mx-auto mt-20 mb-10">
+      <section data-aos="fade-up" id="languages" className="max-w-11/12 xl:max-w-7xl mx-auto mt-20 mb-10 text-center">
         <h2 className="text-white text-3xl font-bold mb-8 text-center">Ohjelmointikielet ja teknologiat</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4">
           <div className="flex flex-col items-center justify-center p-6 bg-slate-800/30 border border-gray-600 rounded-xl hover:bg-slate-700/50 transition-colors shadow-lg">
