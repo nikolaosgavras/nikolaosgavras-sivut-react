@@ -6,12 +6,12 @@ export const HomePage = () => {
   return (
     <>
       <section id="hero" className="flex items-center min-h-200">
-        <div id="hero-card" data-aos="fade-up" data-aos-delay="50" className="container border-2 border-gray-600 max-w-fit mx-auto p-15 rounded-xl backdrop-blur-xl bg-slate-800/20 shadow-[0px_0px_15px_1px] shadow-slate-700/70">
-          <div data-aos="fade-up" data-aos-delay="250" className="mb-8">
+        <div id="hero-card" data-aos="fade-up" data-aos-delay="50" className="container border-2 border-gray-600 max-w-11/12 lg:max-w-fit mx-auto p-15 rounded-xl backdrop-blur-xl bg-slate-800/20 shadow-[0px_0px_15px_1px] shadow-slate-700/70">
+          <div data-aos="fade-up" data-aos-delay="200">
             <h1 className="text-white text-6xl font-bold mb-5">Nikolaos Gavras</h1>
-            <h2 className="text-gray-300 text-2xl">Ohjelmistokehittäjä, viimeisen vuoden opiskelija Savon ammattiopistossa</h2>
-          </div>
-          <div data-aos="fade-up" data-aos-delay="250" className="grid text-white max-w-fit text-center">
+            <h2 className="text-gray-300 text-2xl mb-8">Ohjelmistokehittäjä, viimeisen vuoden opiskelija Savon ammattiopistossa</h2>
+          
+          <div className="grid text-white max-w-fit text-center">
             <Link to="/portfolio" className="button mb-3 px-4 py-2 rounded-full border border-white text-black font-bold text-xl bg-sky-300">Portfolio</Link>
             <Link to="/contact" className="button px-4 py-2 rounded-full border border-white text-black font-bold text-xl bg-sky-300">Ota yhteyttä</Link>
 
@@ -24,6 +24,7 @@ export const HomePage = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
               </a>
             </div>
+          </div>
           </div>
         </div>
       </section>

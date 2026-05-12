@@ -58,7 +58,7 @@ export default function ContactForm() {
           type="submit"
           className="mt-2 inline-flex items-center justify-center rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
         >
-          Submit
+          Lähetä
         </button>
         <p className="text-sm text-white/70" aria-live="polite">
           {result}
