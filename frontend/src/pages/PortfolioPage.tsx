@@ -15,7 +15,7 @@ export const PortfolioPage = () => {
           </div>
       </section>
 
-      <section data-aos="fade-up" data-aos-delay="150" id="cards" className="mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-gray-600 rounded-3xl text-white w-11/12 max-w-7xl mx-auto gap-4 md:gap-6 p-4 md:p-6 bg-slate-800/20 backdrop-blur-xl shadow-[0px_0px_15px_1px] shadow-slate-700/70">
+      <section data-aos="fade-up" data-aos-delay="150" id="cards" className="mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-gray-600 rounded-3xl text-white w-11/12 max-w-7xl mx-auto gap-4 md:gap-6 p-4 md:p-6 bg-slate-800/20 backdrop-blur-xl shadow-[0px_0px_5px_1px] shadow-slate-700/70">
         <div className="border-2 border-slate-700 rounded-2xl flex h-full flex-col">
           <a href="#" 
             onClick={() => {

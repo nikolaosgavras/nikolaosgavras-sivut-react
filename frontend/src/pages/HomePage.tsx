@@ -6,12 +6,12 @@ export const HomePage = () => {
   return (
     <>
       <section id="hero" className="flex items-center min-h-200">
-        <div id="hero-card" data-aos="fade-up" data-aos-delay="50" className="container border-2 border-gray-600 max-w-11/12 lg:max-w-fit mx-auto p-15 rounded-xl backdrop-blur-xl bg-slate-800/20 shadow-[0px_0px_15px_1px] shadow-slate-700/70">
+        <div id="hero-card" data-aos="fade-up" data-aos-delay="50" className="border-2 border-gray-600 max-w-11/12 lg:max-w-fit mx-auto p-15 rounded-xl backdrop-blur-xl bg-slate-800/20 shadow-[0px_0px_15px_1px] shadow-slate-700/70">
           <div data-aos="fade-up" data-aos-delay="200">
-            <h1 className="text-white text-6xl font-bold mb-5">Nikolaos Gavras</h1>
-            <h2 className="text-gray-300 text-2xl mb-8">Ohjelmistokehittäjä, viimeisen vuoden opiskelija Savon ammattiopistossa</h2>
-          
-          <div className="grid text-white max-w-fit text-center">
+            <h1 className="text-white text-5xl sm:text-6xl font-bold mb-5 text-center md:text-start">Nikolaos Gavras</h1>            
+            
+          <div className="grid text-white max-w-fit text-center mx-auto md:mx-0">
+            <h2 className="text-gray-300 text-xl mb-8">Ohjelmistokehittäjä</h2>
             <Link to="/portfolio" className="button mb-3 px-4 py-2 rounded-full border border-white text-black font-bold text-xl bg-sky-300">Portfolio</Link>
             <Link to="/contact" className="button px-4 py-2 rounded-full border border-white text-black font-bold text-xl bg-sky-300">Ota yhteyttä</Link>
 

@@ -1,15 +1,22 @@
-import { Menu } from "lucide-react";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router";
+import { Link } from "react-router";
 
 export const SiteHeader = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
 
   return (
-    <nav className="border-b border-white/10 bg-slate-800/30 text-white shadow-lg shadow-gray-700/10 backdrop-blur-xl">
+    <nav className="sticky top-0 z-50 border-b border-white/10 bg-slate-800/30 text-white shadow-lg shadow-gray-700/10 backdrop-blur-xl">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
 
           <div className="title">
-            <p className="text-bold text-white text-xl">Nikolaos Gavras</p>
+            <Link to="/" className="text-bold text-white text-xl">Nikolaos Gavras</Link>
           </div>
 
           <div className="hidden md:flex space-x-3">
@@ -30,13 +37,25 @@ export const SiteHeader = () => {
           </div>
 
           <div className="flex items-end md:hidden">
-            <button>
-              <Menu size={36}/> {/* TODO: Lisää mobiilinavigaatio */}
+            <button onClick={toggleMobileMenu}>
+              {mobileMenuOpen ? <X size={36} /> : <Menu size={36} />}
             </button>
           </div>
 
         </div>
       </div>
+
+      {/* Mobiilinavigaatio valikko */}
+      {mobileMenuOpen && (
+        <div className="md:hidden border-y border-white/10 bg-slate-800/40 backdrop-blur-xl">
+          <div className="flex flex-col space-y-2 px-4 py-6">
+            <NavLink to="/" onClick={toggleMobileMenu} className="button hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Koti</NavLink>
+            <NavLink to="/about" onClick={toggleMobileMenu} className="button hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Tietoa minusta</NavLink>
+            <NavLink to="/portfolio" onClick={toggleMobileMenu} className="button hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Portfolio</NavLink>
+            <NavLink to="/contact" onClick={toggleMobileMenu} className="button hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Ota yhteyttä</NavLink>
+          </div>
+        </div>
+      )}
     </nav>
   )
 

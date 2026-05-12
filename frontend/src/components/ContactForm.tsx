@@ -22,7 +22,7 @@ export default function ContactForm() {
     <div className="text-white">
       <form
         onSubmit={onSubmit}
-        className="mx-auto flex w-full max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-2xl xl:max-w-xl 2xl:max-w-3xl flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg backdrop-blur"
+        className="mx-auto flex w-full max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-2xl xl:max-w-xl 2xl:max-w-3xl flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur  shadow-[0px_0px_5px_1px] shadow-slate-700/70"
       >
         <label className="flex flex-col gap-2 text-sm font-medium">
           Nimi
