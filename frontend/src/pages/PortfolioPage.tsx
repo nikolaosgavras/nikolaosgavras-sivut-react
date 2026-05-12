@@ -21,7 +21,7 @@ export const PortfolioPage = () => {
             onClick={() => {
               setActiveImage("/img/portfolio/thebigfatgreekgyros.png")
             }}>
-            <img src="/img/portfolio/thebigfatgreekgyros.png" alt="The Big Fat Greek Gyros site" className="h-48 md:h-56 w-full rounded-t-xl object-cover"/>
+            <img src="/img/portfolio/thebigfatgreekgyros.png" alt="The Big Fat Greek Gyros site" className="h-48 md:h-54 w-full rounded-t-xl object-cover"/>
           </a>
           <div className="flex flex-1 flex-col p-3">
             <h1 className="text-2xl font-bold">The Big Fat Greek Gyros</h1>
@@ -58,7 +58,7 @@ export const PortfolioPage = () => {
             onClick={() => {
               setActiveImage("/img/portfolio/thebigfatgreekgyrosreact.png")
             }}>
-            <img src="/img/portfolio/thebigfatgreekgyrosreact.png" alt="The Big Fat Greek Gyros site (React)" className="h-48 md:h-56 w-full rounded-t-xl object-cover"/>
+            <img src="/img/portfolio/thebigfatgreekgyrosreact.png" alt="The Big Fat Greek Gyros site (React)" className="h-48 md:h-54 w-full rounded-t-xl object-cover"/>
           </a>
           <div className="flex flex-1 flex-col p-3">
             <h1 className="text-2xl font-bold">The Big Fat Greek Gyros (React)</h1>
@@ -95,7 +95,7 @@ export const PortfolioPage = () => {
             onClick={() => {
               setActiveImage("/img/portfolio/jhperformance.png")
             }}>
-            <img src="/img/portfolio/jhperformance.png" alt="JH Performance site" className="h-48 md:h-56 w-full rounded-t-xl object-cover"/>
+            <img src="/img/portfolio/jhperformance.png" alt="JH Performance site" className="h-48 md:h-54 w-full rounded-t-xl object-cover"/>
           </a>
           <div className="flex flex-1 flex-col p-3">
             <h1 className="text-2xl font-bold">JH Performance</h1>
@@ -131,7 +131,7 @@ export const PortfolioPage = () => {
             onClick={() => {
               setActiveImage("/img/portfolio/applebattery.png")
             }}>
-            <img src="/img/portfolio/applebattery.png" alt="Apple Battery Health Analyzer site" className="h-48 md:h-56 w-full rounded-t-xl object-cover"/>
+            <img src="/img/portfolio/applebattery.png" alt="Apple Battery Health Analyzer site" className="h-48 md:h-54 w-full rounded-t-xl object-cover"/>
           </a>
           <div className="flex flex-1 flex-col p-3">
             <h1 className="text-2xl font-bold">Apple Battery Health Analyzer</h1>
@@ -167,7 +167,7 @@ export const PortfolioPage = () => {
             onClick={() => {
               setActiveImage("/img/portfolio/github-logo.webp")
             }}>
-            <img src="/img/portfolio/github-logo.webp" alt="Muita projekteja" className="h-48 md:h-56 w-full rounded-t-xl object-cover"/>
+            <img src="/img/portfolio/github-logo.webp" alt="Muita projekteja" className="h-48 md:h-54 w-full rounded-t-xl object-cover"/>
           </a>
           <div className="flex flex-1 flex-col p-3">
             <h1 className="text-2xl font-bold">Muita projekteja</h1>

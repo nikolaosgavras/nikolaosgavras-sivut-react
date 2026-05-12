@@ -6,8 +6,8 @@ export const HomePage = () => {
   return (
     <>
       <section id="hero" className="flex items-center min-h-200">
-        <div id="hero-card" data-aos="fade-up" data-aos-delay="50" className="border-2 border-gray-600 max-w-11/12 lg:max-w-fit mx-auto p-15 rounded-xl backdrop-blur-xl bg-slate-800/20 shadow-[0px_0px_15px_1px] shadow-slate-700/70">
-          <div data-aos="fade-up" data-aos-delay="200">
+        <div id="hero-card" data-aos="fade-up" data-aos-delay="100" className="border-2 border-gray-600 max-w-11/12 lg:max-w-fit mx-auto p-15 rounded-xl backdrop-blur-xl bg-slate-800/20 shadow-[0px_0px_15px_1px] shadow-slate-700/70">
+          <div data-aos="fade-up" data-aos-delay="100">
             <h1 className="text-white text-5xl sm:text-6xl font-bold mb-5 text-center md:text-start">Nikolaos Gavras</h1>            
             
           <div className="grid text-white max-w-fit text-center mx-auto md:mx-0">
