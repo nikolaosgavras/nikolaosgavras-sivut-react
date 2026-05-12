@@ -12,7 +12,7 @@ export const AboutPage = () => {
 
       <section id="introduction" className="grid grid-cols-1 md:grid-cols-2 max-w-11/12 md:max-w-7xl mx-auto mt-5 mb-10">
         <div data-aos="fade-right" data-aos-delay="500">
-          <h1 className="text-slate-100 text-4xl sm:text-5xl mb-5">Hei, olen Nikolaos - tieto- ja viestintätekniikan opiskelija Savon ammattiopistossa.</h1>
+          <h1 className="text-slate-100 text-4xl sm:text-5xl mb-5">Hei, olen Nikolaos - kolmannen vuoden tieto- ja viestintätekniikan opiskelija Savon ammattiopistossa.</h1>
           <p className="text-gray-300 text-lg mb-3">Olen intohimoinen teknologian maailmasta ja ohjelmoinnista, laitteiden korjaamisesta sekä kasaamisesta ja älykkäiden järjestelmien kehittämisestä.</p>
           <p className="text-gray-300 text-lg mb-5"> Vapaa-ajallani nyrkkeilen, käyn kuntosalilla ja kokeilen uusia ohjelmointiprojekteja sekä kehitän taitojani verkko- ja mobiilisovellusten parissa.</p>
           <div className="space-x-3">
