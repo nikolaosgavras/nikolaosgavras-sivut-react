@@ -39,7 +39,7 @@ export const PortfolioPage = () => {
                   rel="noreferrer"
                   className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-700/60 hover:bg-slate-700/80"
                 >
-                  Site
+                  Sivu
                 </a>
                 <a
                   href="https://github.com/nikolaosgavras/thebigfatgreekgyros"
@@ -47,7 +47,7 @@ export const PortfolioPage = () => {
                   rel="noreferrer"
                   className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-700/60 hover:bg-slate-700/80"
                 >
-                  GitHub
+                  Lähdekoodi
                 </a>
               </div>
             </div>
@@ -76,7 +76,7 @@ export const PortfolioPage = () => {
                   rel="noreferrer"
                   className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-700/60 hover:bg-slate-700/80"
                 >
-                  Site
+                  Sivu
                 </a>
                 <a
                   href="https://github.com/nikolaosgavras/thebigfatgreekgyros-react"
@@ -84,7 +84,7 @@ export const PortfolioPage = () => {
                   rel="noreferrer"
                   className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-700/60 hover:bg-slate-700/80"
                 >
-                  GitHub
+                  Lähdekoodi
                 </a>
               </div>
             </div>
@@ -112,7 +112,7 @@ export const PortfolioPage = () => {
                   rel="noreferrer"
                   className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-700/60 hover:bg-slate-700/80"
                 >
-                  Site
+                  Sivu
                 </a>
                 <a
                   href="https://github.com/nikolaosgavras/jhperformance"
@@ -120,7 +120,7 @@ export const PortfolioPage = () => {
                   rel="noreferrer"
                   className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-700/60 hover:bg-slate-700/80"
                 >
-                  GitHub
+                  Lähdekoodi
                 </a>
               </div>
             </div>
@@ -148,7 +148,7 @@ export const PortfolioPage = () => {
                   rel="noreferrer"
                   className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-700/60 hover:bg-slate-700/80"
                 >
-                  Site
+                  Sivu
                 </a>
                 <a
                   href="https://github.com/nikolaosgavras/apple-battery-health"
@@ -156,7 +156,7 @@ export const PortfolioPage = () => {
                   rel="noreferrer"
                   className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-700/60 hover:bg-slate-700/80"
                 >
-                  GitHub
+                  Lähdekoodi
                 </a>
               </div>
             </div>
@@ -180,7 +180,7 @@ export const PortfolioPage = () => {
                   rel="noreferrer"
                   className="flex mx-auto px-3 py-2 text-sm font-semibold rounded-lg bg-slate-700/60 hover:bg-slate-700/80"
                 >
-                  GitHub
+                  GitHub-profiili
                 </a>
               </div>
             </div>
