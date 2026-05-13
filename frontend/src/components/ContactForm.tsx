@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { SubmitEvent } from 'react';
 
-export default function ContactForm() {
+export const ContactForm = () => {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event: SubmitEvent<HTMLFormElement>) => {

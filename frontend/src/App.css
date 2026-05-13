@@ -1,5 +1,41 @@
 @import 'tailwindcss';
 
+:root {
+  --type-hero: clamp(2.5rem, 4vw, 3.75rem);
+  --type-section: clamp(1.75rem, 2.4vw, 2.25rem);
+  --type-lead: clamp(1.25rem, 2vw, 1.75rem);
+  --type-body: 1.05rem;
+  --type-caption: 0.95rem;
+  --leading-tight: 1.1;
+  --leading-default: 1.35;
+  --leading-relaxed: 1.6;
+}
+
+.type-hero {
+  font-size: var(--type-hero);
+  line-height: var(--leading-tight);
+}
+
+.type-section {
+  font-size: var(--type-section);
+  line-height: 1.2;
+}
+
+.type-lead {
+  font-size: var(--type-lead);
+  line-height: var(--leading-default);
+}
+
+.type-body {
+  font-size: var(--type-body);
+  line-height: var(--leading-relaxed);
+}
+
+.type-caption {
+  font-size: var(--type-caption);
+  line-height: 1.5;
+}
+
 @keyframes blob {
   0% { transform: translate(0px, 0px) scale(1); }
   33% { transform: translate(30px, -50px) scale(1.1); }
