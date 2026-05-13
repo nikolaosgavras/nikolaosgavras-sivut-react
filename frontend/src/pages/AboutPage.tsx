@@ -52,8 +52,8 @@ export const AboutPage = () => {
                 <Briefcase size={24} />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">Mobiilisovelluskehittäjä</h3>
-                <h4 className="text-lg text-gray-300">BC Bertenex Oy · Työssäoppiminen</h4>
+                <h3 className="text-lg font-bold text-white">Mobiilisovelluskehittäjä</h3>
+                <h4 className="text-md text-gray-300">BC Bertenex Oy · Työssäoppiminen</h4>
                 <p className="text-sm text-sky-400 font-medium mt-1">Marraskuu 2025 - Maaliskuu 2026</p>
               </div>
             </div>
@@ -69,8 +69,8 @@ export const AboutPage = () => {
                 <Briefcase size={24} />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">Web-kehittäjä</h3>
-                <h4 className="text-lg text-gray-300">Gourmet Street Food Oy · Työssäoppiminen</h4>
+                <h3 className="text-lg font-bold text-white">Web-kehittäjä</h3>
+                <h4 className="text-md text-gray-300">Gourmet Street Food Oy · Työssäoppiminen</h4>
                 <p className="text-sm text-sky-400 font-medium mt-1">Tammikuu 2025 - Maaliskuu 2025</p>
               </div>
             </div>
@@ -159,7 +159,7 @@ export const AboutPage = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white">Minna Punkki</h3>
-                <h4 className="text-lg text-gray-400">Savon ammattiopisto</h4>
+                <h4 className="text-lg text-gray-300">Savon ammattiopisto</h4>
               </div>
             </div>
           </div>
