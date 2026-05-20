@@ -3,19 +3,35 @@ import type { SubmitEvent } from 'react';
 
 export const ContactForm = () => {
   const [result, setResult] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const onSubmit = async (event: SubmitEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
     formData.append("access_key", "30fd48d3-b8fd-4654-a750-b660e988c9f5");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
+    setIsSubmitting(true);
+    setResult("");
 
-    const data = await response.json();
-    setResult(data.success ? "Success!" : "Error");
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Kiitos! Viestisi on lähetetty.");
+        form.reset();
+      } else {
+        setResult("Viestin lähetys epäonnistui. Yritä myöhemmin uudelleen.");
+      }
+    } catch {
+      setResult("Yhteysvirhe. Tarkista verkkoyhteytesi ja yritä uudelleen.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -56,9 +72,10 @@ export const ContactForm = () => {
         </label>
         <button
           type="submit"
-          className="mt-2 inline-flex items-center justify-center rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          disabled={isSubmitting}
+          className="mt-2 inline-flex items-center justify-center rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0"
         >
-          Lähetä
+          {isSubmitting ? "Lähetetään..." : "Lähetä"}
         </button>
         <p className="text-sm text-white/70" aria-live="polite">
           {result}

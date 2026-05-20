@@ -1,8 +1,13 @@
 import { Link } from "react-router"
 import { PanelTop, Smartphone, Layers, Paintbrush, Braces, FileCode, Terminal, Server, Database, Brain, Hash, TabletSmartphone, Briefcase, Trophy, Users, Container } from "lucide-react"
 import { useResponsiveAOS } from "../hooks/useResponsiveAOS"
+import { usePageMeta } from "../hooks/usePageMeta"
 
 export const HomePage = () => {
+  usePageMeta(
+    "Nikolaos Gavras - Web- ja mobiilikehittäjä",
+    "Nikolaos Gavras on tieto- ja viestintätekniikan opiskelija sekä web- ja mobiilikehittäjä. Rakennan nopeita, tyylikkäitä ja luotettavia web- ja mobiiliratkaisuja Reactilla ja Flutterilla.",
+  );
   const introAnimation = useResponsiveAOS({ mobileEffect: 'fade-up', desktopEffect: 'fade-right' });
   const skillsAnimation = useResponsiveAOS({ mobileEffect: 'fade-up', desktopEffect: 'fade-right' });
 

@@ -2,6 +2,7 @@ import { useState } from "react"
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { ZoomControls } from "../components/ZoomControls";
 import { Link } from "react-router";
+import { usePageMeta } from "../hooks/usePageMeta";
 
 
 type Project = {
@@ -18,7 +19,7 @@ const projects: Project[] = [
   {
     title: "The Big Fat Greek Gyros",
     description: "Nettisivu kreikkalaiselle ravintolalle joka on Kuopiossa ja Oulussa. Sivu on staattinen HTML sivu jossa käytetty Bootstrappia, tehty TEO jaksolla.",
-    image: "/img/portfolio/thebigfatgreekgyros.png",
+    image: "/img/portfolio/thebigfatgreekgyros.webp",
     imageAlt: "The Big Fat Greek Gyros site",
     tags: ["Google Tag Manager", "SEO", "Responsiivisuus"],
     siteLink: "https://thebigfatgreekgyros.fi",
@@ -27,7 +28,7 @@ const projects: Project[] = [
   {
     title: "The Big Fat Greek Gyros (React)",
     description: "Uudistettu sivu ravintolalle, parannettu UI/UX ja lisätty admin paneeli josta voi muokata menuja ja tekstejä sivulla. Tämä versio tehty React + Tailwind CSS, PostgreSQL (Supabase) ja deployattu Firebaseen.",
-    image: "/img/portfolio/thebigfatgreekgyrosreact.png",
+    image: "/img/portfolio/thebigfatgreekgyrosreact.webp",
     imageAlt: "The Big Fat Greek Gyros site (React)",
     tags: ["Verkkokehitys", "Admin paneeli", "PostgreSQL"],
     siteLink: "https://thebigfatgreekgyros.web.app",
@@ -36,7 +37,7 @@ const projects: Project[] = [
   {
     title: "JH Performance",
     description: "Nettisivut fitness-valmennus palveluun, moderni UI ja huomiota herättävä call to action",
-    image: "/img/portfolio/jhperformance.png",
+    image: "/img/portfolio/jhperformance.webp",
     imageAlt: "JH Performance site",
     tags: ["Verkkokehitys", "3rd party integraatioita"],
     siteLink: "https://jhperformance.vercel.app",
@@ -45,7 +46,7 @@ const projects: Project[] = [
   {
     title: "Apple Battery Health Analyzer",
     description: "Yksinkertainen plist-tiedoston lukija Apple-laitteiden akun kunnon tarkasteluun.",
-    image: "/img/portfolio/applebattery.png",
+    image: "/img/portfolio/applebattery.webp",
     imageAlt: "Apple Battery Health Analyzer site",
     tags: ["Verkkokehitys", "Tekoälyn hyödyntäminen"],
     siteLink: "https://apple-battery-health.vercel.app",
@@ -61,7 +62,11 @@ const projects: Project[] = [
 ]
 
 export const PortfolioPage = () => {
-  
+  usePageMeta(
+    "Portfolio - Nikolaos Gavras",
+    "Tutustu Nikolaoksen web-kehitysprojekteihin: ravintolasivustoja, fitness-valmennussivuja sekä muita React- ja verkkokehitysprojekteja.",
+  );
+
   const [activeImage, setActiveImage] = useState<string | null>(null)
 
   return (
@@ -88,7 +93,7 @@ export const PortfolioPage = () => {
                 setActiveImage(project.image)
               }}
             >
-              <img src={project.image} alt={project.imageAlt} className="h-48 md:h-54 w-full rounded-t-xl object-cover"/>
+              <img src={project.image} alt={project.imageAlt} loading="lazy" decoding="async" className="h-48 md:h-54 w-full rounded-t-xl object-cover"/>
             </button>
             <div className="flex flex-1 flex-col p-3">
               <h3 className="type-lead font-bold">{project.title}</h3>
