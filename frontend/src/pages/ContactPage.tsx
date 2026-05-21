@@ -1,11 +1,6 @@
 import { ContactForm } from "../components/ContactForm"
-import { usePageMeta } from "../hooks/usePageMeta"
 
 export const ContactPage = () => {
-  usePageMeta(
-    "Ota yhteyttä - Nikolaos Gavras",
-    "Ota yhteyttä Nikolaokseen web- ja mobiilikehitysprojektien merkeissä. Sähköposti, puhelinnumero ja yhteydenottolomake.",
-  );
 
   return (
 

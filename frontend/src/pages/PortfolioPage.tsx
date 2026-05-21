@@ -2,9 +2,6 @@ import { useState } from "react"
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { ZoomControls } from "../components/ZoomControls";
 import { Link } from "react-router";
-import { usePageMeta } from "../hooks/usePageMeta";
-
-
 type Project = {
   title: string;
   description: string;
@@ -62,11 +59,6 @@ const projects: Project[] = [
 ]
 
 export const PortfolioPage = () => {
-  usePageMeta(
-    "Portfolio - Nikolaos Gavras",
-    "Tutustu Nikolaoksen web-kehitysprojekteihin: ravintolasivustoja, fitness-valmennussivuja sekä muita React- ja verkkokehitysprojekteja.",
-  );
-
   const [activeImage, setActiveImage] = useState<string | null>(null)
 
   return (
