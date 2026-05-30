@@ -18,9 +18,9 @@ export const HomePage = () => {
 
         <section id="introduction" className="grid grid-cols-1 md:grid-cols-2 max-w-11/12 xl:max-w-7xl mx-auto mb-10">
         <div data-aos={introAnimation} data-aos-anchor-placement="top-bottom" data-aos-delay="150">
-          <h2 className="type-lead text-slate-100 font-semibold mb-4">Hei, olen Nikolaos - kolmannen vuoden tieto- ja viestintätekniikan opiskelija Savon ammattiopistossa.</h2>
+          <h2 className="type-lead text-slate-100 font-semibold mb-4">Hei, Olen Nikolaos - Full Stack verkko- ja mobiilisovellus kehittäjä</h2>
           <p className="type-body text-gray-300 mb-3">Olen intohimoinen teknologian maailmasta ja ohjelmoinnista, laitteiden korjaamisesta sekä kasaamisesta ja älykkäiden järjestelmien kehittämisestä.</p>
-          <p className="type-body text-gray-300 mb-5">Vapaa-ajallani nyrkkeilen, käyn kuntosalilla ja kokeilen uusia ohjelmointiprojekteja sekä kehitän taitojani verkko- ja mobiilisovellusten parissa.</p>
+          <p className="type-body text-gray-300 mb-5">Vapaa-ajallani nyrkkeilen, käyn kuntosalilla ja kokeilen uusia ohjelmointiprojekteja sekä kehitän taitojani web- ja mobiilisovellusten parissa.</p>
           <div className="space-x-3">
             <Link to="/portfolio" className="button inline-block px-4 py-2 rounded-full border border-white text-black font-bold text-xl bg-sky-300">Portfolio</Link>
             <Link to="/contact" className="button inline-block px-4 py-2 rounded-full border border-white text-black font-bold text-xl bg-sky-300">Ota yhteyttä</Link>
@@ -36,7 +36,11 @@ export const HomePage = () => {
           </div>
           
         </div>
-        <div></div>
+        <section id="picture">
+          <div data-aos={introAnimation} data-aos-anchor-placement="top-bottom" data-aos-delay="150">
+          <img className="rounded-2xl h-100 mx-auto mt-10 md:mt-0" src="img/graduationpic.webp" alt="Kuva itsestäni sen jälkeen kun valmistuin Savon ammattiopistosta." />
+          </div>
+        </section>
       </section>
 
       <section data-aos={skillsAnimation} data-aos-anchor-placement="top-bottom" data-aos-delay="150" id="skillscards" className="mb-5 grid grid-cols-1 md:grid-cols-3 max-w-11/12 xl:max-w-7xl mx-auto gap-5">
@@ -98,6 +102,28 @@ export const HomePage = () => {
               <div>
                 <h3 className="type-lead text-white font-bold">Taitaja2026-kilpailu Web-kehitys finalisti</h3>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-aos="fade-up" id="education" className="max-w-11/12 xl:max-w-7xl mx-auto mt-20 mb-10">
+        <h2 className="type-section text-white font-bold mb-8 text-center">Koulutus</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="flex flex-col p-6 bg-slate-800/30 border border-gray-600 rounded-xl hover:bg-slate-700/50 transition-colors shadow-lg md:col-span-2">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="p-3 bg-sky-500/20 rounded-lg text-sky-400">
+                <Briefcase size={24} />
+              </div>
+              <div>
+                <h3 className="type-lead text-white font-bold">Tieto- ja viestintätekniikan perustutkinto - Ohjelmistokehitys</h3>
+                <h4 className="type-body text-gray-300">Savon ammattiopisto - Savilahti, Kuopio</h4>
+                <p className="type-caption text-sky-400 font-medium mt-1">Elokuu 2023 - Toukokuu 2026</p>
+              </div>
+            </div>
+              <div className="ml-16">
+                <p className="type-body text-gray-300 mb-3">Olen suorittanut 180 osp ammatillisen tutkinnon, jossa opinnot painottuivat ohjelmistokehitykseen. Sovellusten suunnittelu, toteutus ja testaus, versionhallinta, tietokannat.</p>
+                <p className="type-body text-gray-300 mb-3">PHP, HTML/CSS, Unity, JavaScript, phpMyAdmin, Virtualisointi, C#, MySQL</p>
             </div>
           </div>
         </div>
