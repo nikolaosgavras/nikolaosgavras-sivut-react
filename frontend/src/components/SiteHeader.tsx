@@ -13,7 +13,7 @@ export const SiteHeader = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-slate-200 dark:border-white/10 bg-white/80 dark:bg-slate-800/30 text-slate-900 dark:text-white shadow-lg shadow-slate-200/50 dark:shadow-gray-700/10 backdrop-blur-xl">
+    <nav className="sticky top-0 z-50 border-b border-slate-900/10 dark:border-white/10 bg-white/20 dark:bg-slate-800/30 text-slate-900 dark:text-white shadow-slate-200/50 dark:shadow-gray-700/10 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
 
@@ -22,9 +22,9 @@ export const SiteHeader = () => {
           </div>
 
           <div className="hidden md:flex space-x-3">
-            <NavLink to="/" className="button hover:bg-slate-100 dark:hover:bg-gray-800 py-2 px-4 rounded-xl">Koti</NavLink>
-            <NavLink to="/portfolio" className="button hover:bg-slate-100 dark:hover:bg-gray-800 py-2 px-4 rounded-xl">Portfolio</NavLink>
-            <NavLink to="/contact" className="button hover:bg-slate-100 dark:hover:bg-gray-800 py-2 px-4 rounded-xl">Ota yhteyttä</NavLink>
+            <NavLink to="/" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-xl">Koti</NavLink>
+            <NavLink to="/portfolio" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-xl">Portfolio</NavLink>
+            <NavLink to="/contact" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-xl">Ota yhteyttä</NavLink>
           </div>
 
           <div className="hidden md:flex items-center space-x-3">
