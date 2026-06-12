@@ -13,8 +13,8 @@ export const SiteHeader = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-slate-900/10 dark:border-white/10 bg-white/20 dark:bg-slate-800/30 text-slate-900 dark:text-white shadow-slate-200/50 dark:shadow-gray-700/10 backdrop-blur-sm">
-      <div className="max-w-6xl mx-auto px-4">
+    <nav className="sticky top-0 z-50 md:border-b border-black/15 dark:border-white/30 bg-white/20 dark:bg-slate-800/30 text-slate-900 dark:text-white shadow-slate-200/50 dark:shadow-gray-700/10 backdrop-blur-lg">
+      <div className="max-w-6xl mx-auto px-4 border-b md:border-hidden border-black/30 dark:border-white/30">
         <div className="flex h-20 items-center justify-between">
 
           <div className="title">
@@ -65,11 +65,11 @@ export const SiteHeader = () => {
       </div>
 
       {mobileMenuOpen && (
-        <div id="mobile-menu" className="md:hidden border-y border-slate-200 dark:border-white/10 bg-white/90 dark:bg-slate-800/40 backdrop-blur-xl">
+        <div id="mobile-menu" className="md:hidden border-b border-slate-900/30 dark:border-white/10">
           <div className="flex flex-col space-y-2 px-4 py-6">
-            <NavLink to="/" onClick={toggleMobileMenu} className="button hover:bg-slate-100 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Koti</NavLink>
-            <NavLink to="/portfolio" onClick={toggleMobileMenu} className="button hover:bg-slate-100 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Portfolio</NavLink>
-            <NavLink to="/contact" onClick={toggleMobileMenu} className="button hover:bg-slate-100 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Ota yhteyttä</NavLink>
+            <NavLink to="/" onClick={toggleMobileMenu} className="button font-bold hover:bg-gray-400/50 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Koti</NavLink>
+            <NavLink to="/portfolio" onClick={toggleMobileMenu} className="button font-bold hover:bg-gray-400/50 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Portfolio</NavLink>
+            <NavLink to="/contact" onClick={toggleMobileMenu} className="button font-bold hover:bg-gray-400/50 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Ota yhteyttä</NavLink>
           </div>
         </div>
       )}
