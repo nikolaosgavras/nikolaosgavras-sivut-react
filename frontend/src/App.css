@@ -1,5 +1,15 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  background-color: #f8fafc;
+}
+
+html.dark {
+  background-color: #020617;
+}
+
 :root {
   --type-hero: clamp(2.5rem, 4vw, 3.75rem);
   --type-section: clamp(1.75rem, 2.4vw, 2.25rem);

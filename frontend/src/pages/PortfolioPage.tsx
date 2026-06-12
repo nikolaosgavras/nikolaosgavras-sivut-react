@@ -73,18 +73,18 @@ export const PortfolioPage = () => {
     <>
       <section id="titles" data-aos="fade-down" data-aos-delay="150">
           <div className="p-6 md:p-10 mt-5">
-            <h1 className="type-hero text-white font-bold mb-3 text-center">Portfolio</h1>
-            <p className="type-lead text-gray-300 text-center">Tutustu minun projekteihin</p>
+            <h1 className="type-hero text-slate-900 dark:text-white font-bold mb-3 text-center">Portfolio</h1>
+            <p className="type-lead text-slate-600 dark:text-gray-300 text-center">Tutustu minun projekteihin</p>
             <div className="flex justify-center mt-5">
-              <Link to="/contact" className="button inline-block px-4 py-2 rounded-full border border-white text-black font-bold text-xl bg-sky-300">Ota yhteyttä</Link>
+              <Link to="/contact" className="button inline-block px-4 py-2 rounded-full border border-sky-500 dark:border-white text-white dark:text-black font-bold text-xl bg-sky-500 dark:bg-sky-300">Ota yhteyttä</Link>
             </div>
 
           </div>
       </section>
 
-      <section data-aos="fade-up" data-aos-delay="150" id="cards" className="mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-gray-600 rounded-3xl text-white w-11/12 max-w-7xl mx-auto gap-4 md:gap-6 p-4 md:p-6 bg-slate-800/20 backdrop-blur-xl shadow-[0px_0px_5px_1px] shadow-slate-700/70">
+      <section data-aos="fade-up" data-aos-delay="150" id="cards" className="mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-slate-200 dark:border-gray-600 rounded-3xl text-slate-900 dark:text-white w-11/12 max-w-7xl mx-auto gap-4 md:gap-6 p-4 md:p-6 bg-white/80 dark:bg-slate-800/20 backdrop-blur-xl shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
         {projects.map((project) => (
-          <div key={project.title} className="border-2 border-slate-700 rounded-2xl flex h-full flex-col">
+          <div key={project.title} className="border-2 border-slate-200 dark:border-slate-700 rounded-2xl flex h-full flex-col">
             <button
               type="button"
               className="block w-full text-left"
@@ -97,12 +97,12 @@ export const PortfolioPage = () => {
             </button>
             <div className="flex flex-1 flex-col p-3">
               <h3 className="type-lead font-bold">{project.title}</h3>
-              <p className="type-body text-gray-100">{project.description}</p>
+              <p className="type-body text-slate-600 dark:text-gray-100">{project.description}</p>
               <div className="mt-auto">
                 {project.tags && project.tags.length > 0 && (
                   <div className="text-xs mt-5 mb-3 flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
-                      <span key={tag} className="px-4 py-2 bg-sky-600/20 rounded-full">{tag}</span>
+                      <span key={tag} className="px-4 py-2 bg-sky-100 dark:bg-sky-600/20 text-sky-700 dark:text-sky-100 rounded-full">{tag}</span>
                     ))}
                   </div>
                 )}
@@ -112,7 +112,7 @@ export const PortfolioPage = () => {
                       href={project.siteLink}
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-700/60 hover:bg-slate-700/80"
+                      className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-100 dark:bg-slate-700/60 text-slate-700 dark:text-white hover:bg-slate-200 dark:hover:bg-slate-700/80"
                     >
                       Sivu
                     </a>
@@ -122,7 +122,7 @@ export const PortfolioPage = () => {
                       href={project.repoLink}
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-700/60 hover:bg-slate-700/80"
+                      className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-100 dark:bg-slate-700/60 text-slate-700 dark:text-white hover:bg-slate-200 dark:hover:bg-slate-700/80"
                     >
                       Lähdekoodi
                     </a>
@@ -152,29 +152,29 @@ export const PortfolioPage = () => {
                   <img
                     src={activeImage}
                     alt="Portfolio preview"
-                    className="max-h-[85vh] max-w-[90vw] rounded-xl object-contain transition-transform duration-200"              
+                    className="max-h-[85vh] max-w-[90vw] rounded-xl object-contain transition-transform duration-200"
                   />
                 </TransformComponent>
                 <ZoomControls />
             </TransformWrapper>
-            
+
             <div className="mt-4 flex justify-center gap-3">
-              
+
               <button
                 type="button"
                 onClick={() => {
                   setActiveImage(null)
                 }}
-                className="button px-3 py-2 text-sm font-semibold rounded-lg bg-sky-300/70 hover:bg-sky-300/80 text-white"
+                className="button px-3 py-2 text-sm font-semibold rounded-lg bg-sky-500/80 hover:bg-sky-500 text-white"
               >
                 Close
               </button>
-              
+
             </div>
           </div>
         </div>
       )}
-      
+
     </>
   )
 

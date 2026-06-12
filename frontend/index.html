@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href="https://nikolaosg.dev/" />
-    <meta name="theme-color" content="#020617" />
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#020617" media="(prefers-color-scheme: dark)" />
+    <script>(function(){var s=localStorage.getItem('theme');if(s==='dark'||(s===null&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark');})();</script>
     <meta name="author" content="Nikolaos Gavras" />
 
     <title>Nikolaos Gavras - Web- ja mobiilikehittäjä</title>
@@ -60,7 +62,7 @@
       }
     </script>
   </head>
-  <body class="bg-slate-950">
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
