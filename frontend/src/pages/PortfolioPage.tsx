@@ -8,7 +8,7 @@ type Project = {
   image: string;
   imageAlt: string;
   tags?: string[];
-  siteLink: string;
+  siteLink?: string;
   repoLink?: string;
 }
 
@@ -30,6 +30,14 @@ const projects: Project[] = [
     tags: ["Verkkokehitys", "Admin paneeli", "PostgreSQL"],
     siteLink: "https://thebigfatgreekgyros.web.app",
     repoLink: "https://github.com/nikolaosgavras/thebigfatgreekgyros-react",
+  },
+  {
+    title: "Kaavakanta",
+    description: "Taitaja2026-semifinaali tehtävä, verkkopalvelu, jonka kautta kuntalaiset voivat tutustua ajankohtaisiin maankäytön kaavaehdotuksiin ja seurata kaavaprosessin etenemistä.",
+    image: "/img/portfolio/kaavakanta.webp",
+    imageAlt: "Kaavakanta sivusta kuva",
+    tags: ["Verkkokehitys", "MySQL", "PHP"],
+    repoLink: "https://github.com/nikolaosgavras/taitaja2026semifinaali",
   },
   {
     title: "JH Performance",
