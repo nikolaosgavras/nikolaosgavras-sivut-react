@@ -3,13 +3,12 @@ import { PanelTop, Smartphone, Layers, Paintbrush, Braces, FileCode, Terminal, S
 import { useResponsiveAOS } from "../hooks/useResponsiveAOS"
 
 export const HomePage = () => {
-  const introAnimation = useResponsiveAOS({ mobileEffect: 'fade-up', desktopEffect: 'fade-right' });
   const skillsAnimation = useResponsiveAOS({ mobileEffect: 'fade-up', desktopEffect: 'fade-right' });
 
   return (
     <>
 
-      <section id="title" data-aos="fade-down" data-aos-delay="150">
+      <section id="title">
         <div className="p-6 md:p-10 mt-5">
           <h1 className="type-hero text-slate-900 dark:text-white font-bold mb-3 text-center md:pb-2">Nikolaos Gavras</h1>
           <p className="type-lead text-slate-700 dark:text-slate-100 font-semibold text-center">Rakennan nopeita, tyylikkäitä ja luotettavia web- ja mobiiliratkaisuja.</p>
@@ -17,7 +16,7 @@ export const HomePage = () => {
       </section>
 
       <section id="introduction" className="grid grid-cols-1 md:grid-cols-2 max-w-11/12 xl:max-w-7xl mx-auto mb-10">
-        <div data-aos={introAnimation} data-aos-anchor-placement="top-bottom" data-aos-delay="150">
+        <div>
           <h2 className="type-lead text-slate-800 dark:text-slate-100 font-semibold mb-4">Hei, Olen Nikolaos - Full Stack verkko- ja mobiilisovellus kehittäjä</h2>
           <p className="type-body text-slate-600 dark:text-gray-300 mb-3">Olen intohimoinen teknologian maailmasta ja ohjelmoinnista, laitteiden korjaamisesta sekä kasaamisesta ja älykkäiden järjestelmien kehittämisestä.</p>
           <p className="type-body text-slate-600 dark:text-gray-300 mb-5">Vapaa-ajallani nyrkkeilen, käyn kuntosalilla ja kokeilen uusia ohjelmointiprojekteja sekä kehitän taitojani web- ja mobiilisovellusten parissa.</p>
@@ -37,7 +36,7 @@ export const HomePage = () => {
 
         </div>
         <section id="picture">
-          <div data-aos={introAnimation} data-aos-anchor-placement="top-bottom" data-aos-delay="150">
+          <div>
           <img className="rounded-2xl h-100 mx-auto mt-10 md:mt-0" src="img/graduationpic.webp" alt="Kuva itsestäni sen jälkeen kun valmistuin Savon ammattiopistosta." />
           </div>
         </section>
