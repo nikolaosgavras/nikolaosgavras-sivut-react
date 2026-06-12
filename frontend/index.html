@@ -61,6 +61,33 @@
         ]
       }
     </script>
+  <style>
+    #root:empty {
+      position: fixed;
+      inset: 0;
+      background: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    html.dark #root:empty {
+      background: #020617;
+    }
+    #root:empty::after {
+      content: '';
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #0ea5e9;
+      border-right-color: rgba(14, 165, 233, 0.5);
+      border-bottom-color: rgba(14, 165, 233, 0.15);
+      animation: _spin 0.75s linear infinite;
+    }
+    @keyframes _spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
   </head>
   <body>
     <div id="root"></div>

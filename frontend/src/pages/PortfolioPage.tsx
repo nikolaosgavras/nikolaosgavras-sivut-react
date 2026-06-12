@@ -71,7 +71,7 @@ export const PortfolioPage = () => {
 
   return (
     <>
-      <section id="titles">
+      <section id="titles" data-aos="fade-down" data-aos-delay="150">
           <div className="p-6 md:p-10 mt-5">
             <h1 className="type-hero text-slate-900 dark:text-white font-bold mb-3 text-center">Portfolio</h1>
             <p className="type-lead text-slate-600 dark:text-gray-300 text-center">Tutustu minun projekteihin</p>

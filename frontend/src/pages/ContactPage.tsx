@@ -6,7 +6,7 @@ export const ContactPage = () => {
 
     <>
     <div className="xl:overflow-y-hidden xl:overflow-x-hidden">
-      <section id="titles" className="text-slate-900 dark:text-white mt-5 mx-auto">
+      <section id="titles" className="text-slate-900 dark:text-white mt-5 mx-auto" data-aos="fade-down" data-aos-delay="150">
         <h1 className="type-hero text-center font-bold pt-10">Ota yhteyttä</h1>
       </section>
 
