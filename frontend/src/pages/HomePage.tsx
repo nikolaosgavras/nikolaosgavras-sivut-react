@@ -44,17 +44,17 @@ export const HomePage = () => {
       </section>
 
       <section data-aos={skillsAnimation} data-aos-anchor-placement="top-bottom" data-aos-delay="150" id="skillscards" className="mb-5 grid grid-cols-1 md:grid-cols-3 max-w-11/12 xl:max-w-7xl mx-auto gap-5">
-        <div className="card border-2 border-slate-200 dark:border-gray-600 max-w-fit mx-auto p-5 rounded-xl backdrop-blur-xl bg-white dark:bg-slate-800/20 shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
+        <div className="card border-2 border-slate-200 dark:border-gray-600 max-w-fit mx-auto p-5 rounded-xl bg-white dark:bg-slate-800/20 dark:backdrop-blur-xl shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
           <div className="inline-flex text-sky-500 gap-2"><Paintbrush/> </div>
           <h3 className="type-lead text-slate-900 dark:text-white font-bold mb-2">UI/UX</h3>
           <p className="type-body text-slate-600 dark:text-gray-300">Kehitän verkkosovelluksia jossa on moderni käyttöliittymä ja jotka toimivat sujuvasti kaikilla laitteilla ja näytöillä.</p>
         </div>
-        <div className="card border-2 border-slate-200 dark:border-gray-600 max-w-fit mx-auto p-5 rounded-xl backdrop-blur-xl bg-white dark:bg-slate-800/20 shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
+        <div className="card border-2 border-slate-200 dark:border-gray-600 max-w-fit mx-auto p-5 rounded-xl bg-white dark:bg-slate-800/20 dark:backdrop-blur-xl shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
           <div className="inline-flex text-sky-500 gap-2"><Layers/> </div>
           <h3 className="type-lead text-slate-900 dark:text-white font-bold mb-2">Full Stack</h3>
           <p className="type-body text-slate-600 dark:text-gray-300">Hallitsen frontend- ja backend-kehityksen sekä tietokannan suunnittelun. Osaan käyttää useita ohjelmointikieliä ja kehitysalueita.</p>
         </div>
-        <div className="card border-2 border-slate-200 dark:border-gray-600 max-w-fit mx-auto p-5 rounded-xl backdrop-blur-xl bg-white dark:bg-slate-800/20 shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
+        <div className="card border-2 border-slate-200 dark:border-gray-600 max-w-fit mx-auto p-5 rounded-xl bg-white dark:bg-slate-800/20 dark:backdrop-blur-xl shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
           <div className="inline-flex text-sky-500 gap-2"><PanelTop /> <Smartphone /> </div>
           <h3 className="type-lead text-slate-900 dark:text-white font-bold mb-2">Web & Mobile Development</h3>
           <p className="type-body text-slate-600 dark:text-gray-300">Käytän web-kehitykseen Reactia ja mobiilisovellusten kehitykseen Flutteria. Haluan oppia myös React Nativen käyttöä.</p>

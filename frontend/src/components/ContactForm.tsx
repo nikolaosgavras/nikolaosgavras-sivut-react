@@ -38,7 +38,7 @@ export const ContactForm = () => {
     <div className="text-slate-900 dark:text-white">
       <form
         onSubmit={onSubmit}
-        className="mx-auto flex w-full max-w-11/12 md:max-w-2xl flex-col gap-4 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 p-6 backdrop-blur shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70"
+        className="mx-auto flex w-full max-w-11/12 md:max-w-2xl flex-col gap-4 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 p-6 dark:backdrop-blur shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70"
       >
         <label className="flex flex-col gap-2 text-sm font-medium">
           Nimi

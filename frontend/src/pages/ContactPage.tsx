@@ -12,7 +12,7 @@ export const ContactPage = () => {
 
       <section data-aos="fade-up" data-aos-delay="150" id="contact" className="grid grid-cols-1 mt-10">
         <ContactForm/>
-        <div className="my-5 mx-auto flex w-full max-w-11/12 md:max-w-2xl flex-col gap-4 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 p-6 backdrop-blur shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
+        <div className="my-5 mx-auto flex w-full max-w-11/12 md:max-w-2xl flex-col gap-4 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 p-6 dark:backdrop-blur shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
           <h2 className="type-section text-slate-900 dark:text-white font-bold">Yhteystiedot:</h2>
           <p className="type-body text-slate-600 dark:text-gray-300">
             <strong>Sähköposti:</strong> gavras.nikolaos@gmail.com
