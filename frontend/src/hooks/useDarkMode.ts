@@ -12,8 +12,11 @@ export function useDarkMode() {
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark);
-    const meta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
-    if (meta) meta.content = dark ? '#020617' : '#f8fafc';
+    document.querySelector('meta[name="theme-color"]')?.remove();
+    const meta = document.createElement('meta');
+    meta.name = 'theme-color';
+    meta.content = dark ? '#020617' : '#f8fafc';
+    document.head.appendChild(meta);
   }, [dark]);
 
   const toggle = () => {
