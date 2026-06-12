@@ -14,7 +14,7 @@ export const SiteHeader = () => {
 
   return (
     <nav className="sticky top-0 z-50 md:border-b border-black/15 dark:border-white/30 bg-white/20 dark:bg-slate-800/30 text-slate-900 dark:text-white shadow-slate-200/50 dark:shadow-gray-700/10 backdrop-blur-lg">
-      <div className="max-w-6xl mx-auto px-4 border-b md:border-hidden border-black/30 dark:border-white/30">
+      <div className="max-w-6xl mx-auto px-4 border-b md:border-hidden border-black/15 dark:border-white/15">
         <div className="flex h-20 items-center justify-between">
 
           <div className="title">
