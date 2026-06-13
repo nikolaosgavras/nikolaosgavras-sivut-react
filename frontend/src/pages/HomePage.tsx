@@ -40,7 +40,7 @@ export const HomePage = () => {
         </div>
         <section id="picture">
           <div data-aos={introAnimation} data-aos-anchor-placement="top-bottom" data-aos-delay="150">
-            <img className="rounded-2xl h-100 mx-auto mt-10 md:mt-0" src="img/graduationpic.webp" alt={t('home.profileImageAlt')} />
+            <img className="rounded-2xl w-full h-auto md:w-auto md:h-100 mx-auto mt-10 md:mt-0" src="img/graduationpic.webp" alt={t('home.profileImageAlt')} />
           </div>
         </section>
       </section>
