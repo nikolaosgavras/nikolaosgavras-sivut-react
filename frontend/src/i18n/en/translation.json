@@ -142,5 +142,8 @@
       "error": "Message sending failed. Please try again later.",
       "networkError": "Connection error. Check your network connection and try again."
     }
+  },
+  "footer": {
+    "info": "Made with React + Tailwind CSS"
   }
 }

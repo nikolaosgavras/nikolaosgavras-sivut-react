@@ -142,5 +142,8 @@
       "error": "Viestin lähetys epäonnistui. Yritä myöhemmin uudelleen.",
       "networkError": "Yhteysvirhe. Tarkista verkkoyhteytesi ja yritä uudelleen."
     }
+  },
+  "footer": {
+    "info": "Sivu tehty Reactilla + Tailwind CSS"
   }
 }
