@@ -20,7 +20,7 @@ export const SiteHeader = () => {
         <div className="flex h-20 items-center justify-between">
 
           <div className="title">
-            <Link to="/" onClick={() => setMobileMenuOpen(false)} className="font-bold text-slate-900 dark:text-white text-xl">Nikolaos Gavras</Link>
+            <Link to="/" onClick={() => { setMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="font-bold text-slate-900 dark:text-white text-xl">Nikolaos Gavras</Link>
           </div>
 
           <div className="hidden md:flex space-x-3">
