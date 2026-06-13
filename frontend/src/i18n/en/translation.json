@@ -1,3 +1,146 @@
 {
-  "title": "Nikolaos Gavras"
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "contact": "Contact me"
+  },
+  "home": {
+    "name": "Nikolaos Gavras",
+    "subtitle": "I build fast, elegant, and reliable web and mobile solutions.",
+    "profileImageAlt": "A photo of me after graduating from Savon ammattiopisto.",
+    "intro": {
+      "heading": "Hi, I'm Nikolaos - Full Stack web and mobile application developer",
+      "p1": "I'm passionate about technology and programming, device repair and assembly, and developing intelligent systems.",
+      "p2": "In my free time I box, go to the gym, and experiment with new programming projects while developing my skills in web and mobile applications."
+    },
+    "skills": {
+      "uiux": {
+        "title": "UI/UX",
+        "body": "I develop web applications with modern UI that work smoothly on all devices and screens."
+      },
+      "fullstack": {
+        "title": "Full Stack",
+        "body": "I master frontend and backend development as well as database design. I can work with multiple programming languages and development areas."
+      },
+      "webMobile": {
+        "title": "Web & Mobile Development",
+        "body": "I use React for web development and Flutter for mobile app development. I also want to learn React Native."
+      }
+    },
+    "work": {
+      "heading": "Work Experience",
+      "job1": {
+        "title": "Mobile App Developer",
+        "company": "BC Bertenex Oy · Work placement",
+        "period": "November 2025 - March 2026",
+        "p1": "I developed a mobile application with Flutter that uses the sekokuva-mobile-423k image classification model. I trained the model with PyTorch using transfer learning.",
+        "p2": "The application uses Firebase Authentication for login and Cloud Firestore for data storage."
+      },
+      "job2": {
+        "title": "Web Developer",
+        "company": "Gourmet Street Food Oy · Work placement",
+        "period": "January 2025 - March 2025"
+      },
+      "trophy": "Taitaja2026 Web Development finalist"
+    },
+    "education": {
+      "heading": "Education",
+      "degree": {
+        "title": "Vocational Qualification in ICT - Software Development",
+        "school": "Savon ammattiopisto - Savilahti, Kuopio",
+        "period": "August 2023 - May 2026",
+        "p1": "I completed a 180-credit vocational qualification focused on software development. Application design, implementation and testing, version control, databases.",
+        "p2": "PHP, HTML/CSS, Unity, JavaScript, phpMyAdmin, Virtualization, C#, MySQL"
+      }
+    },
+    "tech": {
+      "heading": "Programming languages and technologies",
+      "flutter": "Flutter / Dart",
+      "react": "React & JS/TS",
+      "html": "HTML & CSS",
+      "nodejs": "Node.js/Express.js and PHP",
+      "databases": {
+        "label": "Databases",
+        "sub": "MySQL, NoSQL (Firestore), PostgreSQL"
+      },
+      "docker": {
+        "label": "Docker",
+        "sub": "Docker, Docker Compose"
+      },
+      "pytorch": {
+        "label": "PyTorch",
+        "sub": "Image classification model training"
+      },
+      "python": {
+        "label": "Python",
+        "sub": "Firebase Cloud Functions, APIs"
+      },
+      "csharp": {
+        "label": "C#",
+        "sub": "Windows Forms, Unity Scripts"
+      }
+    },
+    "references": {
+      "heading": "References"
+    }
+  },
+  "portfolio": {
+    "heading": "Portfolio",
+    "subtitle": "Check out my projects",
+    "site": "Site",
+    "repo": "Source code",
+    "close": "Close",
+    "imageAria": "Open {{title}} image",
+    "previewAlt": "Preview",
+    "tags": {
+      "gtm": "Google Tag Manager",
+      "seo": "SEO",
+      "responsive": "Responsiveness",
+      "webDev": "Web development",
+      "adminPanel": "Admin panel",
+      "thirdParty": "3rd party integrations",
+      "aiUse": "AI utilization"
+    },
+    "projects": {
+      "gyros": {
+        "description": "Website for a Greek restaurant located in Kuopio and Oulu. Static HTML site using Bootstrap, made during work placement."
+      },
+      "gyrosReact": {
+        "description": "Redesigned restaurant website with improved UI/UX and an admin panel for editing menus and page content. Built with React + Tailwind CSS, PostgreSQL (Supabase), deployed to Firebase."
+      },
+      "kaavakanta": {
+        "description": "Taitaja2026 semifinal project - a web service where residents can browse current land use plan proposals and track the planning process."
+      },
+      "jh": {
+        "description": "Website for a fitness coaching service, modern UI with an eye-catching call to action."
+      },
+      "battery": {
+        "description": "Simple plist file reader for checking the battery health of Apple devices."
+      },
+      "other": {
+        "title": "Other projects",
+        "description": "More projects can be found on my GitHub profile. I cannot show all projects, e.g. Flutter and PyTorch related ones, as I have a non-disclosure agreement."
+      }
+    }
+  },
+  "contact": {
+    "heading": "Contact me",
+    "info": {
+      "heading": "Contact information:",
+      "email": "Email:",
+      "phone": "Phone number:"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "you@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project, goals, and what expertise you're looking for.",
+      "submit": "Send",
+      "submitting": "Sending...",
+      "success": "Thank you! Your message has been sent.",
+      "error": "Message sending failed. Please try again later.",
+      "networkError": "Connection error. Check your network connection and try again."
+    }
+  }
 }

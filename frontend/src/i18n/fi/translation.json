@@ -1,3 +1,146 @@
 {
-  "title": "Nikolaos Gavras"
+  "nav": {
+    "home": "Koti",
+    "portfolio": "Portfolio",
+    "contact": "Ota yhteyttä"
+  },
+  "home": {
+    "name": "Nikolaos Gavras",
+    "subtitle": "Rakennan nopeita, tyylikkäitä ja luotettavia web- ja mobiiliratkaisuja.",
+    "profileImageAlt": "Kuva itsestäni sen jälkeen kun valmistuin Savon ammattiopistosta.",
+    "intro": {
+      "heading": "Hei, Olen Nikolaos - Full Stack verkko- ja mobiilisovellus kehittäjä",
+      "p1": "Olen intohimoinen teknologian maailmasta ja ohjelmoinnista, laitteiden korjaamisesta sekä kasaamisesta ja älykkäiden järjestelmien kehittämisestä.",
+      "p2": "Vapaa-ajallani nyrkkeilen, käyn kuntosalilla ja kokeilen uusia ohjelmointiprojekteja sekä kehitän taitojani web- ja mobiilisovellusten parissa."
+    },
+    "skills": {
+      "uiux": {
+        "title": "UI/UX",
+        "body": "Kehitän verkkosovelluksia jossa on moderni käyttöliittymä ja jotka toimivat sujuvasti kaikilla laitteilla ja näytöillä."
+      },
+      "fullstack": {
+        "title": "Full Stack",
+        "body": "Hallitsen frontend- ja backend-kehityksen sekä tietokannan suunnittelun. Osaan käyttää useita ohjelmointikieliä ja kehitysalueita."
+      },
+      "webMobile": {
+        "title": "Web & Mobile Development",
+        "body": "Käytän web-kehitykseen Reactia ja mobiilisovellusten kehitykseen Flutteria. Haluan oppia myös React Nativen käyttöä."
+      }
+    },
+    "work": {
+      "heading": "Työkokemus",
+      "job1": {
+        "title": "Mobiilisovelluskehittäjä",
+        "company": "BC Bertenex Oy · Työssäoppiminen",
+        "period": "Marraskuu 2025 - Maaliskuu 2026",
+        "p1": "Kehitin mobiilisovelluksen Flutterilla, joka käyttää sekokuva-mobile-423k -kuvaluokittelumallia. Koulutin mallin PyTorchilla transfer learningillä.",
+        "p2": "Sovellus käyttää Firebase Authenticationia tunnistautumiseen ja Cloud Firestorea tietojen tallentamiseen."
+      },
+      "job2": {
+        "title": "Web-kehittäjä",
+        "company": "Gourmet Street Food Oy · Työssäoppiminen",
+        "period": "Tammikuu 2025 - Maaliskuu 2025"
+      },
+      "trophy": "Taitaja2026-kilpailu Web-kehitys finalisti"
+    },
+    "education": {
+      "heading": "Koulutus",
+      "degree": {
+        "title": "Tieto- ja viestintätekniikan perustutkinto - Ohjelmistokehitys",
+        "school": "Savon ammattiopisto - Savilahti, Kuopio",
+        "period": "Elokuu 2023 - Toukokuu 2026",
+        "p1": "Olen suorittanut 180 osp ammatillisen tutkinnon, jossa opinnot painottuivat ohjelmistokehitykseen. Sovellusten suunnittelu, toteutus ja testaus, versionhallinta, tietokannat.",
+        "p2": "PHP, HTML/CSS, Unity, JavaScript, phpMyAdmin, Virtualisointi, C#, MySQL"
+      }
+    },
+    "tech": {
+      "heading": "Ohjelmointikielet ja teknologiat",
+      "flutter": "Flutter / Dart",
+      "react": "React & JS/TS",
+      "html": "HTML & CSS",
+      "nodejs": "Node.js/Express.js ja PHP",
+      "databases": {
+        "label": "Tietokannat",
+        "sub": "MySQL, NoSQL (Firestore), PostgreSQL"
+      },
+      "docker": {
+        "label": "Docker",
+        "sub": "Docker, Docker Compose"
+      },
+      "pytorch": {
+        "label": "PyTorch",
+        "sub": "Kuvaluokitusmallien treenaus"
+      },
+      "python": {
+        "label": "Python",
+        "sub": "Firebase Cloud Functions, APIs"
+      },
+      "csharp": {
+        "label": "C#",
+        "sub": "Windows Forms, Unity Scripts"
+      }
+    },
+    "references": {
+      "heading": "Suosittelijat"
+    }
+  },
+  "portfolio": {
+    "heading": "Portfolio",
+    "subtitle": "Tutustu minun projekteihin",
+    "site": "Sivu",
+    "repo": "Lähdekoodi",
+    "close": "Sulje",
+    "imageAria": "Avaa {{title}} kuva",
+    "previewAlt": "Esikatselu",
+    "tags": {
+      "gtm": "Google Tag Manager",
+      "seo": "SEO",
+      "responsive": "Responsiivisuus",
+      "webDev": "Verkkokehitys",
+      "adminPanel": "Admin paneeli",
+      "thirdParty": "3rd party integraatioita",
+      "aiUse": "Tekoälyn hyödyntäminen"
+    },
+    "projects": {
+      "gyros": {
+        "description": "Nettisivu kreikkalaiselle ravintolalle joka on Kuopiossa ja Oulussa. Sivu on staattinen HTML sivu jossa käytetty Bootstrappia, tehty TEO jaksolla."
+      },
+      "gyrosReact": {
+        "description": "Uudistettu sivu ravintolalle, parannettu UI/UX ja lisätty admin paneeli josta voi muokata menuja ja tekstejä sivulla. Tämä versio tehty React + Tailwind CSS, PostgreSQL (Supabase) ja deployattu Firebaseen."
+      },
+      "kaavakanta": {
+        "description": "Taitaja2026-semifinaali tehtävä, verkkopalvelu, jonka kautta kuntalaiset voivat tutustua ajankohtaisiin maankäytön kaavaehdotuksiin ja seurata kaavaprosessin etenemistä."
+      },
+      "jh": {
+        "description": "Nettisivut fitness-valmennus palveluun, moderni UI ja huomiota herättävä call to action"
+      },
+      "battery": {
+        "description": "Yksinkertainen plist-tiedoston lukija Apple-laitteiden akun kunnon tarkasteluun."
+      },
+      "other": {
+        "title": "Muita projekteja",
+        "description": "Muita projekteja löytyy minun GitHub-profiilistani. En voi näyttää kaikkia projekteja, esim. Flutteriin ja PyTorchiin liittyviä sillä minulla on salassapitosopimus."
+      }
+    }
+  },
+  "contact": {
+    "heading": "Ota yhteyttä",
+    "info": {
+      "heading": "Yhteystiedot:",
+      "email": "Sähköposti:",
+      "phone": "Puhelinnumero:"
+    },
+    "form": {
+      "name": "Nimi",
+      "namePlaceholder": "Sinun nimi",
+      "emailPlaceholder": "sinä@esimerkki.fi",
+      "message": "Viesti",
+      "messagePlaceholder": "Kerro esimerkiksi projektistasi, tavoitteistasi ja siitä, millaista osaamista etsit.",
+      "submit": "Lähetä",
+      "submitting": "Lähetetään...",
+      "success": "Kiitos! Viestisi on lähetetty.",
+      "error": "Viestin lähetys epäonnistui. Yritä myöhemmin uudelleen.",
+      "networkError": "Yhteysvirhe. Tarkista verkkoyhteytesi ja yritä uudelleen."
+    }
+  }
 }

@@ -2,6 +2,8 @@ import { useState } from "react"
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { ZoomControls } from "../components/ZoomControls";
 import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
+
 type Project = {
   title: string;
   description: string;
@@ -12,73 +14,73 @@ type Project = {
   repoLink?: string;
 }
 
-const projects: Project[] = [
-  {
-    title: "The Big Fat Greek Gyros",
-    description: "Nettisivu kreikkalaiselle ravintolalle joka on Kuopiossa ja Oulussa. Sivu on staattinen HTML sivu jossa käytetty Bootstrappia, tehty TEO jaksolla.",
-    image: "/img/portfolio/thebigfatgreekgyros.webp",
-    imageAlt: "The Big Fat Greek Gyros site",
-    tags: ["Google Tag Manager", "SEO", "Responsiivisuus"],
-    siteLink: "https://thebigfatgreekgyros.fi",
-    repoLink: "https://github.com/nikolaosgavras/thebigfatgreekgyros",
-  },
-  {
-    title: "The Big Fat Greek Gyros (React)",
-    description: "Uudistettu sivu ravintolalle, parannettu UI/UX ja lisätty admin paneeli josta voi muokata menuja ja tekstejä sivulla. Tämä versio tehty React + Tailwind CSS, PostgreSQL (Supabase) ja deployattu Firebaseen.",
-    image: "/img/portfolio/thebigfatgreekgyrosreact.webp",
-    imageAlt: "The Big Fat Greek Gyros site (React)",
-    tags: ["Verkkokehitys", "Admin paneeli", "PostgreSQL"],
-    siteLink: "https://thebigfatgreekgyros.web.app",
-    repoLink: "https://github.com/nikolaosgavras/thebigfatgreekgyros-react",
-  },
-  {
-    title: "Kaavakanta",
-    description: "Taitaja2026-semifinaali tehtävä, verkkopalvelu, jonka kautta kuntalaiset voivat tutustua ajankohtaisiin maankäytön kaavaehdotuksiin ja seurata kaavaprosessin etenemistä.",
-    image: "/img/portfolio/kaavakanta.webp",
-    imageAlt: "Kaavakanta sivusta kuva",
-    tags: ["Verkkokehitys", "MySQL", "PHP"],
-    repoLink: "https://github.com/nikolaosgavras/taitaja2026semifinaali",
-  },
-  {
-    title: "JH Performance",
-    description: "Nettisivut fitness-valmennus palveluun, moderni UI ja huomiota herättävä call to action",
-    image: "/img/portfolio/jhperformance.webp",
-    imageAlt: "JH Performance site",
-    tags: ["Verkkokehitys", "3rd party integraatioita"],
-    siteLink: "https://jhperformance.vercel.app",
-    repoLink: "https://github.com/nikolaosgavras/jhperformance",
-  },
-  {
-    title: "Apple Battery Health Analyzer",
-    description: "Yksinkertainen plist-tiedoston lukija Apple-laitteiden akun kunnon tarkasteluun.",
-    image: "/img/portfolio/applebattery.webp",
-    imageAlt: "Apple Battery Health Analyzer site",
-    tags: ["Verkkokehitys", "Tekoälyn hyödyntäminen"],
-    siteLink: "https://apple-battery-health.vercel.app",
-    repoLink: "https://github.com/nikolaosgavras/apple-battery-health",
-  },
-  {
-    title: "Muita projekteja",
-    description: "Muita projekteja löytyy minun GitHub-profiilistani. En voi näyttää kaikkia projekteja, esim. Flutteriin ja PyTorchiin liittyviä sillä minulla on salassapitosopimus.",
-    image: "/img/portfolio/github-logo.webp",
-    imageAlt: "Muita projekteja",
-    siteLink: "https://github.com/nikolaosgavras",
-  },
-]
-
 export const PortfolioPage = () => {
+  const { t } = useTranslation();
   const [activeImage, setActiveImage] = useState<string | null>(null)
+
+  const projects: Project[] = [
+    {
+      title: "The Big Fat Greek Gyros",
+      description: t('portfolio.projects.gyros.description'),
+      image: "/img/portfolio/thebigfatgreekgyros.webp",
+      imageAlt: "The Big Fat Greek Gyros site",
+      tags: [t('portfolio.tags.gtm'), t('portfolio.tags.seo'), t('portfolio.tags.responsive')],
+      siteLink: "https://thebigfatgreekgyros.fi",
+      repoLink: "https://github.com/nikolaosgavras/thebigfatgreekgyros",
+    },
+    {
+      title: "The Big Fat Greek Gyros (React)",
+      description: t('portfolio.projects.gyrosReact.description'),
+      image: "/img/portfolio/thebigfatgreekgyrosreact.webp",
+      imageAlt: "The Big Fat Greek Gyros site (React)",
+      tags: [t('portfolio.tags.webDev'), t('portfolio.tags.adminPanel'), "PostgreSQL"],
+      siteLink: "https://thebigfatgreekgyros.web.app",
+      repoLink: "https://github.com/nikolaosgavras/thebigfatgreekgyros-react",
+    },
+    {
+      title: "Kaavakanta",
+      description: t('portfolio.projects.kaavakanta.description'),
+      image: "/img/portfolio/kaavakanta.webp",
+      imageAlt: "Kaavakanta sivusta kuva",
+      tags: [t('portfolio.tags.webDev'), "MySQL", "PHP"],
+      repoLink: "https://github.com/nikolaosgavras/taitaja2026semifinaali",
+    },
+    {
+      title: "JH Performance",
+      description: t('portfolio.projects.jh.description'),
+      image: "/img/portfolio/jhperformance.webp",
+      imageAlt: "JH Performance site",
+      tags: [t('portfolio.tags.webDev'), t('portfolio.tags.thirdParty')],
+      siteLink: "https://jhperformance.vercel.app",
+      repoLink: "https://github.com/nikolaosgavras/jhperformance",
+    },
+    {
+      title: "Apple Battery Health Analyzer",
+      description: t('portfolio.projects.battery.description'),
+      image: "/img/portfolio/applebattery.webp",
+      imageAlt: "Apple Battery Health Analyzer site",
+      tags: [t('portfolio.tags.webDev'), t('portfolio.tags.aiUse')],
+      siteLink: "https://apple-battery-health.vercel.app",
+      repoLink: "https://github.com/nikolaosgavras/apple-battery-health",
+    },
+    {
+      title: t('portfolio.projects.other.title'),
+      description: t('portfolio.projects.other.description'),
+      image: "/img/portfolio/github-logo.webp",
+      imageAlt: t('portfolio.projects.other.title'),
+      siteLink: "https://github.com/nikolaosgavras",
+    },
+  ]
 
   return (
     <>
       <section id="titles" data-aos="fade-down" data-aos-delay="150">
           <div className="p-6 md:p-10 mt-5">
-            <h1 className="type-hero text-slate-900 dark:text-white font-bold mb-3 text-center">Portfolio</h1>
-            <p className="type-lead text-slate-600 dark:text-gray-300 text-center">Tutustu minun projekteihin</p>
+            <h1 className="type-hero text-slate-900 dark:text-white font-bold mb-3 text-center">{t('portfolio.heading')}</h1>
+            <p className="type-lead text-slate-600 dark:text-gray-300 text-center">{t('portfolio.subtitle')}</p>
             <div className="flex justify-center mt-5">
-              <Link to="/contact" className="button inline-block px-4 py-2 rounded-full border border-sky-500 dark:border-white text-white dark:text-black font-bold text-xl bg-sky-500 dark:bg-sky-300">Ota yhteyttä</Link>
+              <Link to="/contact" className="button inline-block px-4 py-2 rounded-full border border-sky-500 dark:border-white text-white dark:text-black font-bold text-xl bg-sky-500 dark:bg-sky-300">{t('nav.contact')}</Link>
             </div>
-
           </div>
       </section>
 
@@ -88,10 +90,8 @@ export const PortfolioPage = () => {
             <button
               type="button"
               className="block w-full text-left"
-              aria-label={`Avaa ${project.title} kuva`}
-              onClick={() => {
-                setActiveImage(project.image)
-              }}
+              aria-label={t('portfolio.imageAria', { title: project.title })}
+              onClick={() => setActiveImage(project.image)}
             >
               <img src={project.image} alt={project.imageAlt} loading="lazy" decoding="async" className="h-48 md:h-54 w-full rounded-t-xl object-cover"/>
             </button>
@@ -114,7 +114,7 @@ export const PortfolioPage = () => {
                       rel="noreferrer noopener"
                       className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-100 dark:bg-slate-700/60 text-slate-700 dark:text-white hover:bg-slate-200 dark:hover:bg-slate-700/80"
                     >
-                      Sivu
+                      {t('portfolio.site')}
                     </a>
                   )}
                   {project.repoLink && (
@@ -124,7 +124,7 @@ export const PortfolioPage = () => {
                       rel="noreferrer noopener"
                       className="px-3 py-2 text-sm font-semibold rounded-lg bg-slate-100 dark:bg-slate-700/60 text-slate-700 dark:text-white hover:bg-slate-200 dark:hover:bg-slate-700/80"
                     >
-                      Lähdekoodi
+                      {t('portfolio.repo')}
                     </a>
                   )}
                 </div>
@@ -139,9 +139,7 @@ export const PortfolioPage = () => {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
           role="dialog"
           aria-modal="true"
-          onClick={() => {
-            setActiveImage(null)
-          }}
+          onClick={() => setActiveImage(null)}
         >
           <div
             className="relative"
@@ -151,25 +149,20 @@ export const PortfolioPage = () => {
                 <TransformComponent>
                   <img
                     src={activeImage}
-                    alt="Portfolio preview"
+                    alt={t('portfolio.previewAlt')}
                     className="max-h-[85vh] max-w-[90vw] rounded-xl object-contain transition-transform duration-200"
                   />
                 </TransformComponent>
                 <ZoomControls />
             </TransformWrapper>
-
             <div className="mt-4 flex justify-center gap-3">
-
               <button
                 type="button"
-                onClick={() => {
-                  setActiveImage(null)
-                }}
+                onClick={() => setActiveImage(null)}
                 className="button px-3 py-2 text-sm font-semibold rounded-lg bg-sky-500/80 hover:bg-sky-500 text-white"
               >
-                Close
+                {t('portfolio.close')}
               </button>
-
             </div>
           </div>
         </div>
@@ -177,5 +170,4 @@ export const PortfolioPage = () => {
 
     </>
   )
-
 }

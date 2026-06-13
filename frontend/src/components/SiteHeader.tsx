@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 export const SiteHeader = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dark, toggleDark] = useDarkMode();
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -24,16 +24,16 @@ export const SiteHeader = () => {
           </div>
 
           <div className="hidden md:flex space-x-3">
-            <NavLink to="/" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-xl">Koti</NavLink>
-            <NavLink to="/portfolio" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-xl">Portfolio</NavLink>
-            <NavLink to="/contact" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-xl">Ota yhteyttä</NavLink>
+            <NavLink to="/" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-xl">{t('nav.home')}</NavLink>
+            <NavLink to="/portfolio" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-xl">{t('nav.portfolio')}</NavLink>
+            <NavLink to="/contact" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-xl">{t('nav.contact')}</NavLink>
           </div>
 
           <div className="hidden md:flex items-center space-x-3">
             <select
               value={i18n.language}
               onChange={(e) => i18n.changeLanguage(e.target.value)}
-              className="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-gray-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-sky-500"
+              className="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-gray-600  dark:hover:bg-gray-500/30 text-slate-900 dark:text-white text-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-sky-500"
             >
               <option value="fi">Suomi</option>
               <option value="en">English</option>
@@ -77,9 +77,9 @@ export const SiteHeader = () => {
       {mobileMenuOpen && (
         <div id="mobile-menu" className="md:hidden border-b border-slate-900/30 dark:border-white/10">
           <div className="flex flex-col space-y-2 px-4 py-6">
-            <NavLink to="/" onClick={toggleMobileMenu} className="button font-bold hover:bg-gray-400/50 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Koti</NavLink>
-            <NavLink to="/portfolio" onClick={toggleMobileMenu} className="button font-bold hover:bg-gray-400/50 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Portfolio</NavLink>
-            <NavLink to="/contact" onClick={toggleMobileMenu} className="button font-bold hover:bg-gray-400/50 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">Ota yhteyttä</NavLink>
+            <NavLink to="/" onClick={toggleMobileMenu} className="button font-bold hover:bg-gray-400/50 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">{t('nav.home')}</NavLink>
+            <NavLink to="/portfolio" onClick={toggleMobileMenu} className="button font-bold hover:bg-gray-400/50 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">{t('nav.portfolio')}</NavLink>
+            <NavLink to="/contact" onClick={toggleMobileMenu} className="button font-bold hover:bg-gray-400/50 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">{t('nav.contact')}</NavLink>
             <select
               value={i18n.language}
               onChange={(e) => i18n.changeLanguage(e.target.value)}
