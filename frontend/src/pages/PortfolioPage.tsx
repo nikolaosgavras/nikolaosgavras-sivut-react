@@ -43,6 +43,7 @@ export const PortfolioPage = () => {
       image: "/img/portfolio/kaavakanta.webp",
       imageAlt: "Kaavakanta sivusta kuva",
       tags: [t('portfolio.tags.webDev'), "MySQL", "PHP"],
+      siteLink: "https://kaavakanta.nikolaosg.dev",
       repoLink: "https://github.com/nikolaosgavras/taitaja2026semifinaali",
     },
     {
