@@ -68,16 +68,16 @@ export const HomePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg md:col-span-2">
             <div className="flex items-start gap-4 mb-4">
-              <div className="p-3 bg-sky-100 dark:bg-sky-500/20 rounded-lg text-sky-600 dark:text-sky-400">
+              <div className="p-3 bg-sky-100 dark:bg-sky-500/20 rounded-lg text-sky-600 dark:text-sky-400 shrink-0">
                 <Briefcase size={24} />
               </div>
-              <div>
-                <h3 className="type-lead text-slate-900 dark:text-white font-bold">{t('home.work.job1.title')}</h3>
-                <h4 className="type-body text-slate-600 dark:text-gray-300">{t('home.work.job1.company')}</h4>
+              <div className="min-w-0">
+                <h3 className="type-lead text-slate-900 dark:text-white font-bold break-words">{t('home.work.job1.title')}</h3>
+                <h4 className="type-body text-slate-600 dark:text-gray-300 break-words">{t('home.work.job1.company')}</h4>
                 <p className="type-caption text-sky-600 dark:text-sky-400 font-medium mt-1">{t('home.work.job1.period')}</p>
               </div>
             </div>
-            <div className="ml-16">
+            <div className="md:ml-16">
               <p className="type-body text-slate-600 dark:text-gray-300 mb-3">{t('home.work.job1.p1')}</p>
               <p className="type-body text-slate-600 dark:text-gray-300">{t('home.work.job1.p2')}</p>
             </div>
@@ -85,12 +85,12 @@ export const HomePage = () => {
 
           <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <div className="flex items-start gap-4 mb-4">
-              <div className="p-3 bg-sky-100 dark:bg-sky-500/20 rounded-lg text-sky-600 dark:text-sky-400">
+              <div className="p-3 bg-sky-100 dark:bg-sky-500/20 rounded-lg text-sky-600 dark:text-sky-400 shrink-0">
                 <Briefcase size={24} />
               </div>
-              <div>
-                <h3 className="type-lead text-slate-900 dark:text-white font-bold">{t('home.work.job2.title')}</h3>
-                <h4 className="type-body text-slate-600 dark:text-gray-300">{t('home.work.job2.company')}</h4>
+              <div className="min-w-0">
+                <h3 className="type-lead text-slate-900 dark:text-white font-bold break-words">{t('home.work.job2.title')}</h3>
+                <h4 className="type-body text-slate-600 dark:text-gray-300 break-words">{t('home.work.job2.company')}</h4>
                 <p className="type-caption text-sky-600 dark:text-sky-400 font-medium mt-1">{t('home.work.job2.period')}</p>
               </div>
             </div>
@@ -114,16 +114,16 @@ export const HomePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg md:col-span-2">
             <div className="flex items-start gap-4 mb-4">
-              <div className="p-3 bg-sky-100 dark:bg-sky-500/20 rounded-lg text-sky-600 dark:text-sky-400">
+              <div className="p-3 bg-sky-100 dark:bg-sky-500/20 rounded-lg text-sky-600 dark:text-sky-400 shrink-0">
                 <Briefcase size={24} />
               </div>
-              <div>
-                <h3 className="type-lead text-slate-900 dark:text-white font-bold">{t('home.education.degree.title')}</h3>
-                <h4 className="type-body text-slate-600 dark:text-gray-300">{t('home.education.degree.school')}</h4>
+              <div className="min-w-0">
+                <h3 className="type-lead text-slate-900 dark:text-white font-bold break-words">{t('home.education.degree.title')}</h3>
+                <h4 className="type-body text-slate-600 dark:text-gray-300 break-words">{t('home.education.degree.school')}</h4>
                 <p className="type-caption text-sky-600 dark:text-sky-400 font-medium mt-1">{t('home.education.degree.period')}</p>
               </div>
             </div>
-            <div className="ml-16">
+            <div className="md:ml-16">
               <p className="type-body text-slate-600 dark:text-gray-300 mb-3">{t('home.education.degree.p1')}</p>
               <p className="type-body text-slate-600 dark:text-gray-300 mb-3">{t('home.education.degree.p2')}</p>
             </div>
@@ -183,7 +183,7 @@ export const HomePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <div className="flex items-center gap-4">
-              <div className="p-3 bg-indigo-100 dark:bg-indigo-500/20 rounded-lg text-indigo-600 dark:text-indigo-400">
+              <div className="p-3 bg-indigo-100 dark:bg-indigo-500/20 rounded-lg text-indigo-600 dark:text-indigo-400 shrink-0">
                 <Users size={24} />
               </div>
               <div>
@@ -194,7 +194,7 @@ export const HomePage = () => {
           </div>
           <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <div className="flex items-center gap-4">
-              <div className="p-3 bg-indigo-100 dark:bg-indigo-500/20 rounded-lg text-indigo-600 dark:text-indigo-400">
+              <div className="p-3 bg-indigo-100 dark:bg-indigo-500/20 rounded-lg text-indigo-600 dark:text-indigo-400 shrink-0">
                 <Users size={24} />
               </div>
               <div>

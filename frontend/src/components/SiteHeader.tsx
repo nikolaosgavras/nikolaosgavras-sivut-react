@@ -20,7 +20,7 @@ export const SiteHeader = () => {
         <div className="flex h-20 items-center justify-between">
 
           <div className="title">
-            <Link to="/" className="font-bold text-slate-900 dark:text-white text-xl">Nikolaos Gavras</Link>
+            <Link to="/" onClick={() => setMobileMenuOpen(false)} className="font-bold text-slate-900 dark:text-white text-xl">Nikolaos Gavras</Link>
           </div>
 
           <div className="hidden md:flex space-x-3">
@@ -32,7 +32,7 @@ export const SiteHeader = () => {
           <div className="hidden md:flex items-center space-x-3">
             <select
               value={i18n.language}
-              onChange={(e) => i18n.changeLanguage(e.target.value)}
+              onChange={(e) => { i18n.changeLanguage(e.target.value); localStorage.setItem('i18n-lang', e.target.value); }}
               className="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-gray-600  dark:hover:bg-gray-500/30 text-slate-900 dark:text-white text-md cursor-pointer focus:outline-none"
             >
               <option value="fi">Suomi</option>
@@ -82,7 +82,7 @@ export const SiteHeader = () => {
             <NavLink to="/contact" onClick={toggleMobileMenu} className="button font-bold hover:bg-gray-400/50 dark:hover:bg-gray-700 py-3 px-4 rounded-xl text-lg text-center">{t('nav.contact')}</NavLink>
             <select
               value={i18n.language}
-              onChange={(e) => i18n.changeLanguage(e.target.value)}
+              onChange={(e) => { i18n.changeLanguage(e.target.value); localStorage.setItem('i18n-lang', e.target.value); }}
               className="px-3 py-2 rounded-xl border border-slate-300 dark:border-gray-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-lg cursor-pointer focus:outline-none"
             >
               <option value="fi">Suomi</option>
