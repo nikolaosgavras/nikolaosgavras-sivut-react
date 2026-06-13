@@ -33,7 +33,7 @@ export const SiteHeader = () => {
             <select
               value={i18n.language}
               onChange={(e) => i18n.changeLanguage(e.target.value)}
-              className="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-gray-600  dark:hover:bg-gray-500/30 text-slate-900 dark:text-white text-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-sky-500"
+              className="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-gray-600  dark:hover:bg-gray-500/30 text-slate-900 dark:text-white text-md cursor-pointer focus:outline-none"
             >
               <option value="fi">Suomi</option>
               <option value="en">English</option>
@@ -83,7 +83,7 @@ export const SiteHeader = () => {
             <select
               value={i18n.language}
               onChange={(e) => i18n.changeLanguage(e.target.value)}
-              className="px-3 py-2 rounded-xl border border-slate-300 dark:border-gray-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-sky-500"
+              className="px-3 py-2 rounded-xl border border-slate-300 dark:border-gray-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-lg cursor-pointer focus:outline-none"
             >
               <option value="fi">Suomi</option>
               <option value="en">English</option>
