@@ -6,7 +6,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import { HomePage } from './pages/HomePage';
-/* const Services = () => <h1>Services</h1> */
 import { PortfolioPage } from './pages/PortfolioPage';
 import { ContactPage } from './pages/ContactPage';
 

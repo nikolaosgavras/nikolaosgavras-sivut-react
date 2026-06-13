@@ -1,8 +1,12 @@
 import { Link } from "react-router"
 import { PanelTop, Smartphone, Layers, Paintbrush, Braces, FileCode, Terminal, Server, Database, Brain, Hash, TabletSmartphone, Briefcase, Trophy, Users, Container } from "lucide-react"
 import { useResponsiveAOS } from "../hooks/useResponsiveAOS"
+import { useTranslation } from "react-i18next";
 
 export const HomePage = () => {
+
+  const { t } = useTranslation();
+  
   const introAnimation = useResponsiveAOS({ mobileEffect: 'fade-up', desktopEffect: 'fade-right' });
   const skillsAnimation = useResponsiveAOS({ mobileEffect: 'fade-up', desktopEffect: 'fade-right' });
 
@@ -11,7 +15,7 @@ export const HomePage = () => {
 
       <section id="title" data-aos="fade-down" data-aos-delay="150">
         <div className="p-6 md:p-10 mt-5">
-          <h1 className="type-hero text-slate-900 dark:text-white font-bold mb-3 text-center md:pb-2">Nikolaos Gavras</h1>
+          <h1 className="type-hero text-slate-900 dark:text-white font-bold mb-3 text-center md:pb-2">{t('title')}</h1>
           <p className="type-lead text-slate-700 dark:text-slate-100 font-semibold text-center">Rakennan nopeita, tyylikkäitä ja luotettavia web- ja mobiiliratkaisuja.</p>
         </div>
       </section>
