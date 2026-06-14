@@ -61,7 +61,7 @@ export const PortfolioPage = () => {
       image: "/img/portfolio/applebattery.webp",
       imageAlt: "Apple Battery Health Analyzer site",
       tags: [t('portfolio.tags.webDev'), t('portfolio.tags.aiUse')],
-      siteLink: "https://apple-battery-health.vercel.app",
+      siteLink: "https://applebattery.nikolaosg.dev",
       repoLink: "https://github.com/nikolaosgavras/apple-battery-health",
     },
     {
