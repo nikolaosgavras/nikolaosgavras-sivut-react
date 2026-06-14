@@ -16,7 +16,7 @@ export const ContactPage = () => {
         <div className="my-5 mx-auto flex w-full max-w-11/12 md:max-w-2xl flex-col gap-4 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 p-6 dark:backdrop-blur shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
           <h2 className="type-section text-slate-900 dark:text-white font-bold">{t('contact.info.heading')}</h2>
           <p className="type-body text-slate-600 dark:text-gray-300">
-            <strong>{t('contact.info.email')}</strong> gavras.nikolaos@gmail.com
+            <strong>{t('contact.info.email')}</strong> contact@nikolaosg.dev
           </p>
           <p className="type-body text-slate-600 dark:text-gray-300">
             <strong>{t('contact.info.phone')}</strong> +358 40 487 4089
