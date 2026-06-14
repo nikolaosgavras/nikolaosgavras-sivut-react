@@ -16,10 +16,12 @@ export const ContactPage = () => {
         <div className="my-5 mx-auto flex w-full max-w-11/12 md:max-w-2xl flex-col gap-4 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 p-6 dark:backdrop-blur shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
           <h2 className="type-section text-slate-900 dark:text-white font-bold">{t('contact.info.heading')}</h2>
           <p className="type-body text-slate-600 dark:text-gray-300">
-            <strong>{t('contact.info.email')}</strong> contact@nikolaosg.dev
+            <strong>{t('contact.info.email')}</strong>{' '}
+            <a href="mailto:contact@nikolaosg.dev" className="text-sky-600 dark:text-sky-400 hover:underline">contact@nikolaosg.dev</a>
           </p>
           <p className="type-body text-slate-600 dark:text-gray-300">
-            <strong>{t('contact.info.phone')}</strong> +358 40 487 4089
+            <strong>{t('contact.info.phone')}</strong>{' '}
+            <a href="tel:+358404874089" className="text-sky-600 dark:text-sky-400 hover:underline">+358 40 487 4089</a>
           </p>
         </div>
       </section>
