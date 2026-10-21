@@ -25,17 +25,8 @@ export const PortfolioPage = () => {
       image: "/img/portfolio/thebigfatgreekgyros.webp",
       imageAlt: "The Big Fat Greek Gyros site",
       tags: [t('portfolio.tags.gtm'), t('portfolio.tags.seo'), t('portfolio.tags.responsive')],
-      siteLink: "https://thebigfatgreekgyros.fi",
+      siteLink: "https://thebigfatgreekgyros.vercel.app/",
       repoLink: "https://github.com/nikolaosgavras/thebigfatgreekgyros",
-    },
-    {
-      title: "The Big Fat Greek Gyros (React)",
-      description: t('portfolio.projects.gyrosReact.description'),
-      image: "/img/portfolio/thebigfatgreekgyrosreact.webp",
-      imageAlt: "The Big Fat Greek Gyros site (React)",
-      tags: [t('portfolio.tags.webDev'), t('portfolio.tags.adminPanel'), "PostgreSQL"],
-      siteLink: "https://thebigfatgreekgyros.web.app",
-      repoLink: "https://github.com/nikolaosgavras/thebigfatgreekgyros-react",
     },
     {
       title: "Kaavakanta",
