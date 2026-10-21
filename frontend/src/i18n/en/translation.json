@@ -31,14 +31,14 @@
       "heading": "Work Experience",
       "job1": {
         "title": "Mobile App Developer",
-        "company": "BC Bertenex Oy · Work placement",
+        "company": "BC Bertenex Oy · Internship",
         "period": "November 2025 - March 2026",
         "p1": "I developed a mobile application with Flutter that uses the sekokuva-mobile-423k image classification model. I trained the model with PyTorch using transfer learning.",
         "p2": "The application uses Firebase Authentication for login and Cloud Firestore for data storage."
       },
       "job2": {
         "title": "Web Developer",
-        "company": "Gourmet Street Food Oy · Work placement",
+        "company": "Gourmet Street Food Oy · Internship",
         "period": "January 2025 - March 2025"
       },
       "trophy": "Taitaja2026 Web Development finalist"
@@ -103,13 +103,17 @@
     },
     "projects": {
       "gyros": {
-        "description": "Website for a Greek restaurant located in Kuopio and Oulu. Static HTML site using Bootstrap, made during work placement."
+        "description": "Website for a Greek restaurant located in Kuopio and Oulu. Static HTML site using Bootstrap, made during my internship at Gourmet Street Food Oy."
       },
       "gyrosReact": {
         "description": "Redesigned restaurant website with improved UI/UX and an admin panel for editing menus and page content. Built with React + Tailwind CSS, PostgreSQL (Supabase), deployed to Firebase."
       },
       "kaavakanta": {
         "description": "Taitaja2026 semifinal project - a web service where residents can browse current land use plan proposals and track the planning process."
+      },
+      "auth": {
+        "title": "React + Express Authentication",
+        "description": "Full stack application with JWT login, protected API routes, and user management. Built with React, TypeScript, Express, and MySQL, with bcrypt password hashing and Docker Compose"
       },
       "jh": {
         "description": "Website for a fitness coaching service, modern UI with an eye-catching call to action."

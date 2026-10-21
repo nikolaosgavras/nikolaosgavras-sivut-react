@@ -103,13 +103,17 @@
     },
     "projects": {
       "gyros": {
-        "description": "Nettisivu kreikkalaiselle ravintolalle joka on Kuopiossa ja Oulussa. Sivu on staattinen HTML sivu jossa käytetty Bootstrappia, tehty TEO jaksolla."
+        "description": "Nettisivu kreikkalaiselle ravintolalle joka on Kuopiossa ja Oulussa. Sivu on staattinen HTML sivu jossa käytetty Bootstrappia, tehty TEO jaksolla Gourmet Street Food Oy:llä."
       },
       "gyrosReact": {
         "description": "Uudistettu sivu ravintolalle, parannettu UI/UX ja lisätty admin paneeli josta voi muokata menuja ja tekstejä sivulla. Tämä versio tehty React + Tailwind CSS, PostgreSQL (Supabase) ja deployattu Firebaseen."
       },
       "kaavakanta": {
         "description": "Taitaja2026-semifinaali tehtävä, verkkopalvelu, jonka kautta kuntalaiset voivat tutustua ajankohtaisiin maankäytön kaavaehdotuksiin ja seurata kaavaprosessin etenemistä."
+      },
+      "auth": {
+        "title": "React + Express -kirjautumissovellus",
+        "description": "Full stack -sovellus, jossa on JWT-kirjautuminen, suojatut API-reitit ja käyttäjien hallinta. Toteutettu Reactilla, TypeScriptillä, Expressillä ja MySQL:llä. Salasanat tiivistetään bcryptillä, ja paikallinen kehitysympäristö käynnistyy Docker Composella."
       },
       "jh": {
         "description": "Nettisivut fitness-valmennus palveluun, moderni UI ja huomiota herättävä call to action"

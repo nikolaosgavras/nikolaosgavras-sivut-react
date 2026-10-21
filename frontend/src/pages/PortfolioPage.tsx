@@ -3,12 +3,13 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { ZoomControls } from "../components/ZoomControls";
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
+import { LockKeyhole } from "lucide-react";
 
 type Project = {
   title: string;
   description: string;
-  image: string;
-  imageAlt: string;
+  image?: string;
+  imageAlt?: string;
   tags?: string[];
   siteLink?: string;
   repoLink?: string;
@@ -36,6 +37,12 @@ export const PortfolioPage = () => {
       tags: [t('portfolio.tags.webDev'), "MySQL", "PHP"],
       siteLink: "https://kaavakanta.nikolaosg.dev",
       repoLink: "https://github.com/nikolaosgavras/taitaja2026semifinaali",
+    },
+    {
+      title: t('portfolio.projects.auth.title'),
+      description: t('portfolio.projects.auth.description'),
+      tags: ["React", "TypeScript", "Express", "MySQL", "JWT", "Docker"],
+      repoLink: "https://github.com/nikolaosgavras/express-react-docker-jwt-auth",
     },
     {
       title: "JH Performance",
@@ -79,14 +86,21 @@ export const PortfolioPage = () => {
       <section data-aos="fade-up" data-aos-delay="150" id="cards" className="mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-slate-200 dark:border-gray-600 rounded-3xl text-slate-900 dark:text-white w-11/12 max-w-7xl mx-auto gap-4 md:gap-6 p-4 md:p-6 bg-white dark:bg-slate-800/20 dark:backdrop-blur-xl shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
         {projects.map((project) => (
           <div key={project.title} className="border-2 border-slate-200 dark:border-slate-700 rounded-2xl flex h-full flex-col">
-            <button
-              type="button"
-              className="block w-full text-left"
-              aria-label={t('portfolio.imageAria', { title: project.title })}
-              onClick={() => setActiveImage(project.image)}
-            >
-              <img src={project.image} alt={project.imageAlt} loading="lazy" decoding="async" className="h-48 md:h-54 w-full rounded-t-xl object-cover"/>
-            </button>
+            {project.image ? (
+              <button
+                type="button"
+                className="block w-full text-left"
+                aria-label={t('portfolio.imageAria', { title: project.title })}
+                onClick={() => setActiveImage(project.image ?? null)}
+              >
+                <img src={project.image} alt={project.imageAlt} loading="lazy" decoding="async" className="h-48 md:h-54 w-full rounded-t-xl object-cover"/>
+              </button>
+            ) : (
+              <div aria-hidden="true" className="flex h-48 md:h-54 flex-col items-center justify-center gap-4 rounded-t-xl bg-linear-to-br from-sky-100 via-slate-50 to-indigo-100 text-sky-700 dark:from-slate-800 dark:via-slate-900 dark:to-indigo-950 dark:text-sky-300">
+                <LockKeyhole size={56} strokeWidth={1.5} />
+                <span className="text-xl font-semibold">React + Express</span>
+              </div>
+            )}
             <div className="flex flex-1 flex-col p-3">
               <h3 className="type-lead font-bold">{project.title}</h3>
               <p className="type-body text-slate-600 dark:text-gray-100">{project.description}</p>
