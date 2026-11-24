@@ -69,12 +69,9 @@ html.dark {
   transition: all 0.2s ease;
 }
 
-.button:hover {
-  transform: scale(1.05);
-}
 
 .button:active {
-  transform: scale(1.00);
+  transform: scale(0.90);
 }
 
 .card {

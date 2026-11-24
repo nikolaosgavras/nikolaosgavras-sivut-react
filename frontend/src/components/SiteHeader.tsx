@@ -4,6 +4,7 @@ import { NavLink } from "react-router";
 import { Link } from "react-router";
 import { useDarkMode } from "../hooks/useDarkMode";
 import { useTranslation } from "react-i18next";
+import Logo from "/favicon.svg";
 
 export const SiteHeader = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,13 +21,15 @@ export const SiteHeader = () => {
         <div className="flex h-20 items-center justify-between">
 
           <div className="title">
-            <Link to="/" onClick={() => { setMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="font-bold text-slate-900 dark:text-white text-xl">{t('home.name')}</Link>
+            <Link to="/" onClick={() => { setMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="font-bold text-slate-900 dark:text-white text-xl">
+              <img src={Logo} alt="Nikolaos Gavras" className="h-14 w-14" />
+            </Link>
           </div>
 
           <div className="hidden md:flex space-x-3">
-            <NavLink to="/" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-xl">{t('nav.home')}</NavLink>
-            <NavLink to="/portfolio" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-xl">{t('nav.portfolio')}</NavLink>
-            <NavLink to="/contact" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-xl">{t('nav.contact')}</NavLink>
+            <NavLink to="/" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-lg border border-slate-600">{t('nav.home')}</NavLink>
+            <NavLink to="/portfolio" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-lg border border-slate-600">{t('nav.portfolio')}</NavLink>
+            <NavLink to="/contact" className="button font-bold hover:bg-gray-500/30 dark:hover:bg-gray-500/50 py-2 px-4 rounded-lg border border-slate-600">{t('nav.contact')}</NavLink>
           </div>
 
           <div className="hidden md:flex items-center space-x-3">

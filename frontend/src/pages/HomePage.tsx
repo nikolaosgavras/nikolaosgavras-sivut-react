@@ -20,7 +20,7 @@ export const HomePage = () => {
         </div>
       </section>
 
-      <section id="introduction" className="grid grid-cols-1 md:grid-cols-2 max-w-11/12 xl:max-w-7xl mx-auto mb-10">
+      <section id="introduction" className="grid grid-cols-1 lg:grid-cols-2 max-w-11/12 xl:max-w-6xl mx-auto mb-10">
         <div data-aos={introAnimation} data-aos-anchor-placement="top-bottom" data-aos-delay="150">
           <h2 className="type-lead text-slate-800 dark:text-slate-100 font-semibold mb-4">{t('home.intro.heading')}</h2>
           <p className="type-body text-slate-600 dark:text-gray-300 mb-3">{t('home.intro.p1')}</p>
@@ -40,23 +40,23 @@ export const HomePage = () => {
         </div>
         <section id="picture">
           <div data-aos={introAnimation} data-aos-anchor-placement="top-bottom" data-aos-delay="150">
-            <img className="rounded-2xl w-full h-auto md:w-auto md:h-100 mx-auto mt-10 md:mt-0" src="img/graduationpic.webp" alt={t('home.profileImageAlt')} />
+            <img className="rounded-2xl w-auto h-full lg:w-auto lg:h-100 ml-auto mt-10 lg:mt-0" src="img/graduationpic.webp" alt={t('home.profileImageAlt')} />
           </div>
         </section>
       </section>
 
       <section data-aos={skillsAnimation} data-aos-anchor-placement="top-bottom" data-aos-delay="150" id="skillscards" className="mb-5 grid grid-cols-1 md:grid-cols-3 max-w-11/12 xl:max-w-7xl mx-auto gap-5">
-        <div className="card border-2 border-slate-200 dark:border-gray-600 max-w-fit mx-auto p-5 rounded-xl bg-white dark:bg-slate-800/20 dark:backdrop-blur-xl shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
+        <div className="card border border-slate-200 dark:border-gray-800 max-w-fit mx-auto p-5 rounded-xl bg-white dark:bg-slate-800/20 dark:backdrop-blur-xl">
           <div className="inline-flex text-sky-500 gap-2"><Paintbrush /></div>
           <h3 className="type-lead text-slate-900 dark:text-white font-bold mb-2">{t('home.skills.uiux.title')}</h3>
           <p className="type-body text-slate-600 dark:text-gray-300">{t('home.skills.uiux.body')}</p>
         </div>
-        <div className="card border-2 border-slate-200 dark:border-gray-600 max-w-fit mx-auto p-5 rounded-xl bg-white dark:bg-slate-800/20 dark:backdrop-blur-xl shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
+        <div className="card border border-slate-200 dark:border-gray-800 max-w-fit mx-auto p-5 rounded-xl bg-white dark:bg-slate-800/20 dark:backdrop-blur-xl">
           <div className="inline-flex text-sky-500 gap-2"><Layers /></div>
           <h3 className="type-lead text-slate-900 dark:text-white font-bold mb-2">{t('home.skills.fullstack.title')}</h3>
           <p className="type-body text-slate-600 dark:text-gray-300">{t('home.skills.fullstack.body')}</p>
         </div>
-        <div className="card border-2 border-slate-200 dark:border-gray-600 max-w-fit mx-auto p-5 rounded-xl bg-white dark:bg-slate-800/20 dark:backdrop-blur-xl shadow-[0px_0px_5px_1px] shadow-slate-200/80 dark:shadow-slate-700/70">
+        <div className="card border border-slate-200 dark:border-gray-800 max-w-fit mx-auto p-5 rounded-xl bg-white dark:bg-slate-800/20 dark:backdrop-blur-xl">
           <div className="inline-flex text-sky-500 gap-2"><PanelTop /> <Smartphone /></div>
           <h3 className="type-lead text-slate-900 dark:text-white font-bold mb-2">{t('home.skills.webMobile.title')}</h3>
           <p className="type-body text-slate-600 dark:text-gray-300">{t('home.skills.webMobile.body')}</p>
@@ -66,14 +66,14 @@ export const HomePage = () => {
       <section data-aos="fade-up" id="work-experience" className="max-w-11/12 xl:max-w-7xl mx-auto mt-20 mb-10">
         <h2 className="type-section text-slate-900 dark:text-white font-bold mb-8 text-center">{t('home.work.heading')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg md:col-span-2">
+          <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg md:col-span-2">
             <div className="flex items-start gap-4 mb-4">
               <div className="p-3 bg-sky-100 dark:bg-sky-500/20 rounded-lg text-sky-600 dark:text-sky-400 shrink-0">
                 <Briefcase size={24} />
               </div>
               <div className="min-w-0">
-                <h3 className="type-lead text-slate-900 dark:text-white font-bold break-words">{t('home.work.job1.title')}</h3>
-                <h4 className="type-body text-slate-600 dark:text-gray-300 break-words">{t('home.work.job1.company')}</h4>
+                <h3 className="type-lead text-slate-900 dark:text-white font-bold wrap-break-wordword">{t('home.work.job1.title')}</h3>
+                <h4 className="type-body text-slate-600 dark:text-gray-300 wrap-break-word">{t('home.work.job1.company')}</h4>
                 <p className="type-caption text-sky-600 dark:text-sky-400 font-medium mt-1">{t('home.work.job1.period')}</p>
               </div>
             </div>
@@ -83,20 +83,20 @@ export const HomePage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
+          <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <div className="flex items-start gap-4 mb-4">
               <div className="p-3 bg-sky-100 dark:bg-sky-500/20 rounded-lg text-sky-600 dark:text-sky-400 shrink-0">
                 <Briefcase size={24} />
               </div>
               <div className="min-w-0">
-                <h3 className="type-lead text-slate-900 dark:text-white font-bold break-words">{t('home.work.job2.title')}</h3>
-                <h4 className="type-body text-slate-600 dark:text-gray-300 break-words">{t('home.work.job2.company')}</h4>
+                <h3 className="type-lead text-slate-900 dark:text-white font-bold wrap-break-word">{t('home.work.job2.title')}</h3>
+                <h4 className="type-body text-slate-600 dark:text-gray-300 wrap-break-word">{t('home.work.job2.company')}</h4>
                 <p className="type-caption text-sky-600 dark:text-sky-400 font-medium mt-1">{t('home.work.job2.period')}</p>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg justify-center">
+          <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg justify-center">
             <div className="flex items-center gap-4">
               <div className="p-3 bg-yellow-100 dark:bg-yellow-500/20 rounded-lg text-yellow-600 dark:text-yellow-500 shadow-[0_0_15px_rgba(234,179,8,0.3)]">
                 <Trophy size={28} />
@@ -112,14 +112,14 @@ export const HomePage = () => {
       <section data-aos="fade-up" id="education" className="max-w-11/12 xl:max-w-7xl mx-auto mt-20 mb-10">
         <h2 className="type-section text-slate-900 dark:text-white font-bold mb-8 text-center">{t('home.education.heading')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg md:col-span-2">
+          <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg md:col-span-2">
             <div className="flex items-start gap-4 mb-4">
               <div className="p-3 bg-sky-100 dark:bg-sky-500/20 rounded-lg text-sky-600 dark:text-sky-400 shrink-0">
                 <Briefcase size={24} />
               </div>
               <div className="min-w-0">
-                <h3 className="type-lead text-slate-900 dark:text-white font-bold break-words">{t('home.education.degree.title')}</h3>
-                <h4 className="type-body text-slate-600 dark:text-gray-300 break-words">{t('home.education.degree.school')}</h4>
+                <h3 className="type-lead text-slate-900 dark:text-white font-bold wrap-break-word">{t('home.education.degree.title')}</h3>
+                <h4 className="type-body text-slate-600 dark:text-gray-300 wrap-break-word">{t('home.education.degree.school')}</h4>
                 <p className="type-caption text-sky-600 dark:text-sky-400 font-medium mt-1">{t('home.education.degree.period')}</p>
               </div>
             </div>
@@ -134,43 +134,43 @@ export const HomePage = () => {
       <section data-aos="fade-up" id="languages" className="max-w-11/12 xl:max-w-7xl mx-auto mt-20 mb-10 text-center">
         <h2 className="type-section text-slate-900 dark:text-white font-bold mb-8 text-center">{t('home.tech.heading')}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4">
-          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
+          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <TabletSmartphone className="text-cyan-500 dark:text-cyan-400 w-12 h-12 mb-3" />
             <span className="type-body text-slate-900 dark:text-white font-semibold">{t('home.tech.flutter')}</span>
           </div>
-          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
+          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <Braces className="text-blue-500 dark:text-blue-400 w-12 h-12 mb-3" />
             <span className="type-body text-slate-900 dark:text-white font-semibold">{t('home.tech.react')}</span>
           </div>
-          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
+          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <FileCode className="text-orange-500 dark:text-orange-400 w-12 h-12 mb-3" />
             <span className="type-body text-slate-900 dark:text-white font-semibold">{t('home.tech.html')}</span>
           </div>
-          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
+          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <Server className="text-green-600 dark:text-green-500 w-12 h-12 mb-3" />
             <span className="type-body text-slate-900 dark:text-white font-semibold">{t('home.tech.nodejs')}</span>
           </div>
-          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
+          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <Database className="text-sky-500 dark:text-sky-300 w-12 h-12 mb-3" />
             <span className="type-body text-slate-900 dark:text-white font-semibold">{t('home.tech.databases.label')}</span>
             <span className="type-caption text-slate-500 dark:text-gray-400 mt-1">{t('home.tech.databases.sub')}</span>
           </div>
-          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
+          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <Container className="text-blue-600 dark:text-blue-500 w-12 h-12 mb-3" />
             <span className="type-body text-slate-900 dark:text-white font-semibold">{t('home.tech.docker.label')}</span>
             <span className="type-caption text-slate-500 dark:text-gray-400 mt-1">{t('home.tech.docker.sub')}</span>
           </div>
-          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg text-center">
+          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg text-center">
             <Brain className="text-pink-500 w-12 h-12 mb-3" />
             <span className="type-body text-slate-900 dark:text-white font-semibold">{t('home.tech.pytorch.label')}</span>
             <span className="type-caption text-slate-500 dark:text-gray-400 mt-1">{t('home.tech.pytorch.sub')}</span>
           </div>
-          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
+          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <Terminal className="text-yellow-500 dark:text-yellow-400 w-12 h-12 mb-3" />
             <span className="type-body text-slate-900 dark:text-white font-semibold">{t('home.tech.python.label')}</span>
             <span className="type-caption text-slate-500 dark:text-gray-400 mt-1">{t('home.tech.python.sub')}</span>
           </div>
-          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
+          <div className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <Hash className="text-purple-500 w-12 h-12 mb-3" />
             <span className="type-body text-slate-900 dark:text-white font-semibold">{t('home.tech.csharp.label')}</span>
             <span className="type-caption text-slate-500 dark:text-gray-400 mt-1">{t('home.tech.csharp.sub')}</span>
@@ -181,7 +181,7 @@ export const HomePage = () => {
       <section data-aos="fade-up" id="references" className="max-w-11/12 xl:max-w-7xl mx-auto mt-20 mb-20">
         <h2 className="type-section text-slate-900 dark:text-white font-bold mb-8 text-center">{t('home.references.heading')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
+          <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <div className="flex items-center gap-4">
               <div className="p-3 bg-indigo-100 dark:bg-indigo-500/20 rounded-lg text-indigo-600 dark:text-indigo-400 shrink-0">
                 <Users size={24} />
@@ -192,7 +192,7 @@ export const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
+          <div className="flex flex-col p-6 bg-white dark:bg-slate-800/30 border border-slate-200 dark:border-gray-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-lg">
             <div className="flex items-center gap-4">
               <div className="p-3 bg-indigo-100 dark:bg-indigo-500/20 rounded-lg text-indigo-600 dark:text-indigo-400 shrink-0">
                 <Users size={24} />
