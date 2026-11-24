@@ -7,3 +7,6 @@ export const MeshBackground = () => {
     </div>
   );
 };
+
+
+// out of use for now, since I don't like the look
